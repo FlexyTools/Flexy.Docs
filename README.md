@@ -1,4 +1,4 @@
-![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
+![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
 
 # Flexy.Docs
 Common repo with documentation of all packages in flexy framework and templates
