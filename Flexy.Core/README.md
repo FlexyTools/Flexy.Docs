@@ -1,15 +1,21 @@
 ﻿![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
-[StartGuide](StartGuide.md)
+[Docs and Use Cases](Documentation.md)
 | [FAQ](FAQ.md)
+
+<!-- 
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) 
 | [Asset Store](https://u3d.as/3u78)
-
-**Flexy.AssetRefs**
+-->
+**Flexy.Core**
 ===================
 
-Load assets **on demand** without Addressables and Bundles  
-Almost **zero** editor setup!  
-Fast, extendable, production-proven and **Open Source!**
+Core package of **Flexy Framework** that every other package depends on  
+
+[GameContext](GameContext.md)  
+[Bindings](Bindings.md)  
+[Actions](Actions.md)   
+[common utilities](CommonUtilities.md)  
+
 
 **Want to load assets ondemand but**
 -----------------------
@@ -33,10 +39,9 @@ more complex systems later.
 **Key Strengths**
 ------------------
 - It is Open Source :)
-- It is Universal
 - Fast: pure struct based 
 - ECS-Compatible: because it is struct
-- Extensible: load methods can be totally replaced 
+- Customisable: load methods can be totally replaced 
 - GDD Friendly: store asset references directly inside GameDesignData
 - Asset Loader can be totally replaced (Bundles, Addressables, Custom, ...)
 - Editor-Friendly: works seamlessly in the Editor without extra setup
@@ -49,7 +54,7 @@ more complex systems later.
   - Does not clutter GO inspector
   - Only one simple file in project to collect necessary data for runtime
 
-See [StartGuide](StartGuide.md) for usage samples   
+See [Docs and Use Cases](Documentation.md) for usage samples   
 
 
 **Flexy.AssetRefs is**
@@ -67,6 +72,12 @@ and can be replaced with your own implementation. It is only 5 virtual methods t
 **Already Used in Games:** Sniper League, Animals Happy Run, Cyberstrike, Combat Master
 **In production on platforms:** iOS, Android, Windows, Linux, Mac
 
+**Roadmap**
+-----------------------
+
+**Auto unloaders:** will add few Api's to help auto unload loaded assets    
+**Unity 6 Awaitables:** We think about moving Api to Unity 6 Awaitables in asset version 6.x  
+
 
 **Technical details**
 ---------------------
@@ -74,10 +85,11 @@ and can be replaced with your own implementation. It is only 5 virtual methods t
 - C# Extensions based load methods
 - AssetLoader interface is 5 virtual methods
 - Sync loading 
-- UniTask based async loading (embeded) 
+- UniTask based async loading 
 - Native C# Nullability annotations
 - C# 10
 - Fast Enter Play Mode support
+
 
 
 This package uses cropped version of UniTask package under MIT License  
