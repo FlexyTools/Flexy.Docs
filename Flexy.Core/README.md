@@ -14,7 +14,7 @@ Core package of **Flexy Framework** that every other package depends on
 [GameContext](GameContext.md)  
 [Bindings](Bindings.md)  
 [Actions](Actions.md)   
-[common utilities](CommonUtilities.md)  
+[Common Utilities](CommonUtilities.md)  
 
 
 **Want to load assets ondemand but**

@@ -1,10 +1,13 @@
 ![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
 
 # Flexy Framework
-Documentation of all Flexy packages: Flexy.Framework, Flexy.Templates, Flexy.QoL  
 [Flexy.Fun](https://flexy.fun)
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
 | [Asset Store](https://assetstore.unity.com/publishers/113112)
+
+Documentation of all Flexy packages: Flexy.Framework, Flexy.Templates, Flexy.QoL
+
+## [**Flexy.Bricks**](Flexy.Bricks.md)
 
 ## [**Flexy.AssetRefs**](Flexy.AssetRefs/README.md)
 

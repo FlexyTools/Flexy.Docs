@@ -49,6 +49,8 @@ var audioSettings = GameSettings.Get<SettingsTab_Audio>();
 audioSettings.SoundVolume.Changed += UpdateVolume;
 ```
 
+Note: Each setting implemented as struct so dont cache setting itself, cache SettingTab_Class 
+
 ## One more thing
 
 PlayerPrefs can not be read from MonoBehavior constructor  
