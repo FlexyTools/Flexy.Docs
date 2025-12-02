@@ -6,7 +6,7 @@
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) 
 | [Asset Store](https://u3d.as/3u78)
 -->
-# **Flexy.Core**
+# **Flexy.UI**
 
 Core package of **Flexy Framework** that every other package depends on  
 

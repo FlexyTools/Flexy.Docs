@@ -1,6 +1,6 @@
 # **Flexy.Core Actions**
 
-[Index](README.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)
+[Home](README.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)
 
 
 **Flexy Actions** is universal and composable system to do action in response to event.  
@@ -33,4 +33,4 @@ Also, those actions serve as samples for implementing actions specific for your 
 **EventBox_LateUpdate** - Component that raise event every late update  
 **EventBox_Lifecycle** - Component that raise events on default unity callbacks Awake, Start, OnEnable, OnDisable, OnDestroy  
 
-[Index](README.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)
+[Home](README.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)

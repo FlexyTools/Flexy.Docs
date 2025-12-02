@@ -1,6 +1,6 @@
 ![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
 
-# Flexy.Bricks
+# Flexy.Bricks\ToYs
   
 [Flexy.Fun](https://flexy.fun)
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)

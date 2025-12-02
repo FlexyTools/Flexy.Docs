@@ -1,6 +1,6 @@
 # Flexy.Core Common Utilities 
 
-[Index](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md)
+[Home](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md)
 
 
 ## Extensions
@@ -19,12 +19,13 @@
 
 ## Misc
 
-**LocString** - core ValueObject struct for string localisation  
-**PoymorphicAttribute** - draw serializable reference field as polymorphic class  
 **Rng** - Squirrel Random Number Generator implementation. State free noise based generator  
+**LocString** - core ValueObject struct for string localisation  
+
+**PoymorphicAttribute** - draw serializable reference field as polymorphic class  
 **RoDict, RoList** - True Read only struct wrapper for readonly access without ability to cast back and without lost of perfomance  
 **RuntimeInspector** - draw object runtime state in inspector by decorating method with attribute  
 **SpanList, TempList** - temp lists for temporary collection in algorithms without GC allocation  
 
 
-[Index](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md)
+[Home](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md)
