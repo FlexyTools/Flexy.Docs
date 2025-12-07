@@ -1,57 +1,45 @@
-# **Flexy.Core GameContext**
+# **Flow Graph**
 
 [Home](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Common Utilities](CommonUtilities.md)
 
 
-Flexy way to think about game dependencies and their composition. **Context based**  
-You can think like DI Container but more clear and tied to scenes and GameObjects instead of live in thin air   
+This graph stores state graph starting from root FlowNode and allows to manipulate it   
+Each node in graph have parent, firstchild, left and right siblings and history forward and back nodes  
+So we have 6 axes of freedom here :)
 
-Any GameObject or Component always lives in context! actually deep inside hierarchy of contexts  
-From closest to farthest:
-- GameObject
-- Parent line of GameObjects to the root
-- Scene
-- Unity
-- C# Env
-- OS 
+## Structure
 
-Programmers can access any service from any context from any place like:
-```csharp
-gameObject.layer
-gameObject.transform.root
-gameObject.scene.name
-Physics.Raycast
-Screen.width
-Single.Parse
-Thread.Sleep
-Environment.ProcessorCount
-File.Exists
-``` 
-We know that it is safe to access any of those contexts because they was bord before our Component and will die only after it
+### Hierarchy
+Parent-child relationship is used to organize hierarchy  
+Root Node in hierarchy created with graph itself. Then you spawn GameStages (Boot, Meta, Core). It is first level of nesting  
+Game stages spawn states inside of it. Meta:MainMenu, Leaderboard, Settings. Core: PlayState, PauseState, WindState.
+States can have substates inside of them. e.g. Shop with Tabs
+You can nest as deep as you like, but most of the time 3 levels is enough 
 
-GameContexts continue this concept to user space. 
-So we create GameContexts hierarchy in game fill it with services and put objects to live in it  
-Everything visually 
+### Siblings
+siblings are used travel all substates of a state.  
+Get first\last state of GameStage etc 
 
-They replace SceneContext and default unity context hierarchy becomes (sample of Networked FPS):
-- GameObject
-- Parent line of GameObjects to the root
-- ---
-- GameModeContext
-- MapContext
-- CoregameContext
-- BootContext
-- GlobalContext
-- ---
-- Unity
-- C# Env
-- OS
+### History
+Forward-back navigation is used to navigate through history of state switches  
+Mostly is used to go back on back button press
 
-There is also MetagameContext instead of Coregame amp and GameMode when we not in battle  
-Every context have their own services that inits before any other code can run so it is safe to access any service  
-You can access services directly or of you wish you can write simple methof that injects services from context to your component like any DI containers do
 
-Pairing with GameFlow package it is very powerful system to manager game flow and services
-FlexyTemplate Barley-Break shows many project organisation concepts and showcase proposed way to use GameContexts 
+## Methods
+
+### Open
+Opens new state and switches to it
+
+### GoBack
+Try to go back if current state allows
+
+### LockOn\UnLock (Pro feature)
+Allows to lock graph on some state so any **external** attempts to change state will open it before locked one in graph   
+Current state is allowed to change itself to any other
+
+E.g. in Networked FPS you open PauseState and lock it. You can freely navigate to setting and other states but 
+if game try to put you from PlayState to KilledState and back it will happens under pause menu so 
+user flow will not be interrupted. When user exits pauseState it will go back to PlayState or KilledState based on what is actually active here  
+ 
 
 [Home](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Common Utilities](CommonUtilities.md)

@@ -7,7 +7,7 @@
 
 Documentation of all Flexy packages: Flexy.Framework, Flexy.Templates, Flexy.QoL
 
-## [**Flexy.Bricks**](Flexy.Bricks.md)
+## [Flexy.Bricks\ToYs](Flexy.Bricks.md)
 
 ## [**Flexy.AssetRefs**](Flexy.AssetRefs/README.md)
 
