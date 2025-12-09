@@ -44,6 +44,7 @@ drastically simplifying management complexity:
 - Easy launch: Enter play mode from any scene
 - Launch from state: No need to launch entire game and go deep to your UI or Play State to test, debug or develop
 - Easy cleanup: Close and destory cleanup flow
+- **[Pro]** Await Result: await for state result like popup answer or StatePlay results
 - **[Pro]** Extensible: Various logical Open/Close callbacks to override or subscribe
 - **[Pro]** Precise: await for exact moment where logical event is raised
 - GameContext based: every big state have it own Flexy.GameContext by design
@@ -53,7 +54,7 @@ drastically simplifying management complexity:
 - Simple To Use: Once setup you care only about **one** class State 99% of time
 - Ready to go: Provides super simple template to see all states in one place
 - **[Pro]** Split screen ready: separate BigState for each screen
-- **[Pro]** Felxy transitions: Fully customisable logic of transition behavior UniTask based
+- **[Pro]** Felxy transitions: Fully customizable, UniTask based logic of transition behavior
 - Network ready: good fit for network state transitions
 - **[Pro]** Async preload: preload state views for instant transitions later (no load spikes)
 - Easy bootstrap: simple and short bootstrap script that use only public Api, so you can write your own
