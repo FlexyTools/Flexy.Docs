@@ -1,56 +1,37 @@
 ![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
 
-# Flexy Framework
+# Flexy.Tools
+
 [Flexy.Fun](https://flexy.fun)
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
 | [Asset Store](https://assetstore.unity.com/publishers/113112)
 
-Documentation of all Flexy packages: Flexy.Framework, Flexy.Templates, Flexy.QoL
+Documentation and issue tracker for all Flexy packages and Templates
+
+
+## Flexy Framework
+
+It is complete system for creating games:  
+- Starting from architecture principles and patterns for games **Flexy.Bricks\ToYs**  
+- Going through **Packages** that implement necessary building **Bricks / ToYs**
+- And to the Ready to Use or learn from **Game Templates**   
+
 
 ## [Flexy.Bricks\ToYs](Flexy.Bricks.md)
 
-## [**Flexy.AssetRefs**](Flexy.AssetRefs/README.md)
-
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Asset Store](https://u3d.as/3u78)
-| [Github](https://github.com/FlexyTools/Flexy.AssetRefs)  
-Load assets **on demand** without Addressables and Bundles  
-Almost **zero** editor setup!  
-Fast, extendable, production-proven and **Open Source!**
-
-## [**Flexy.Core**](Flexy.Core/README.md)
-
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Github](https://github.com/FlexyTools/Flexy.Core)  
+Flexy.Bricks\ToYs is set of Architecture principles and patterns principles collected and created by me JesOb for building games
 
 
-Core package of **Flexy Framework** that every other package depends on  
-Consists of GameContext, Bindings, Actions and very few common utilities   
+## [Flexy.Packages](Packages.md)
+
+This is the foundation that creates stable ecosystem so you can concentrate on creating games itself
 
 
-## [**Flexy.GameFlow**](Flexy.GameFlow/README.md)
+## [Flexy.GameTemplates](GameTemplates/README.md)
 
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Github](https://github.com/FlexyTools/Flexy.GameFlow)
-
-Universal Hierarchical stater machine that will manage your  
-game states, transitions, in so simple way you never seen before
-
-## [**Flexy.UI**](Flexy.UI/README.md)
-
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Github](https://github.com/FlexyTools/Flexy.UI)
-
-Universal Hierarchical stater machine that will manage your  
-game states, transitions, in so simple way you never seen before
+This is ready to use Full Project that reflects Flexy Framework principles and becomes a good foundation for new projects and learning 
 
 
-## [**Flexy.GameSettings**](Flexy.GameSettings/README.md)
+# QoL Tools
 
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Asset Store](https://u3d.as/3u78)
-| [Github](https://github.com/FlexyTools/Flexy.AssetRefs)
-
-Easily store game settings for settings window or any other needs with just one line per setting.  
-With extensibility in mind and **Open Source!**    
-
+under construction...

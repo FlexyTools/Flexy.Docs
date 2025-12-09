@@ -6,12 +6,12 @@
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
 | [Asset Store](https://assetstore.unity.com/publishers/113112)
 
-Flexy.Bricks is set of principles collected and created by me **JesOb** for building games.  
+Flexy.Bricks\ToYs is set of Architecture principles and patterns collected and created by me **JesOb** for building games.  
 
-Over almost 20 years of experience I have learned a lot about game development and filter and slightly change meaning of tools that actually works for it  
-With those you can create modular, testable and fault-tolerant systems and games 
+Over almost 20 years of experience I have learned a lot about game development, filter and slightly change meaning of tools that actually works for it  
+With those you can create modular, testable and fault-tolerant bricks(modules), ToYs and compose games from them  
 
-### Bricks Building Principles
+### Brick\ToY Building Principles
 - **SPOT** - every system has a single responsible source of truth  
 - **KISS** - write simple predictable and understandable code  
 - **Pure & self-sufficient** -  independent, modular systems  
