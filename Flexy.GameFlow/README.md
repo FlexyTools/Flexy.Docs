@@ -67,7 +67,7 @@ See [StartGuide](StartGuide.md) for usage samples
 ## Flexy.GameFlow is
 
 Universal Hierarchical stater machine that will manage your  
-game states, transitions,  in a so simple way you never seen before
+game states, transitions, in so simple way you never seen before
 
 
 ## Technical details

@@ -27,6 +27,24 @@ Fast, extendable, production-proven and **Open Source!**
 Core package of **Flexy Framework** that every other package depends on  
 Consists of GameContext, Bindings, Actions and very few common utilities   
 
+
+## [**Flexy.GameFlow**](Flexy.GameFlow/README.md)
+
+[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
+| [Github](https://github.com/FlexyTools/Flexy.GameFlow)
+
+Universal Hierarchical stater machine that will manage your  
+game states, transitions, in so simple way you never seen before
+
+## [**Flexy.UI**](Flexy.UI/README.md)
+
+[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
+| [Github](https://github.com/FlexyTools/Flexy.UI)
+
+Universal Hierarchical stater machine that will manage your  
+game states, transitions, in so simple way you never seen before
+
+
 ## [**Flexy.GameSettings**](Flexy.GameSettings/README.md)
 
 [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
