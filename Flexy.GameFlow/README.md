@@ -7,12 +7,15 @@
 -->
 # Flexy.GameFlow
 
+Universal Hierarchical stater machine that will manage your  
+game states, transitions, in so simple way you never seen before
+
 Any Game is set of Game States that transition into each other  
 Big ones like Boot, Lobby(Metagame), Battle(Coregame)  
 And small ones like main menu, settings, loading, play state, pause state, cutscene, win\loose screen etc.
 
 Hierarchical GameState machine is fundamental piece of every game
-
+If you just thought about UI Manager no! It is not UI manager but Flexy.UI builds on top of it 
 
 ## Want to control game flow with ease but:
 
@@ -22,6 +25,7 @@ Hierarchical GameState machine is fundamental piece of every game
 - Your code looks like everything depend on everything even with DI
 - Hard to create unique state transition sequences
 - Hard to test, debug and maintain
+- Passing data between scenes is painful
 
 
 **Flexy.GameFlow** will manage game states and transitions seamlessly and effortless for you
@@ -44,7 +48,9 @@ drastically simplifying management complexity:
 - Easy launch: Enter play mode from any scene
 - Launch from state: No need to launch entire game and go deep to your UI or Play State to test, debug or develop
 - Easy cleanup: Close and destory cleanup flow
-- **[Pro]** Await Result: await for state result like popup answer or StatePlay results
+- Easy data exchange: Pass data to state and back with one line of code
+- Await Result: await for state result like popup answer or StatePlay results
+- Scene Friendly: States is responsible to load scenes. So you can load any scene from any state
 - **[Pro]** Extensible: Various logical Open/Close callbacks to override or subscribe
 - **[Pro]** Precise: await for exact moment where logical event is raised
 - GameContext based: every big state have it own Flexy.GameContext by design
@@ -54,7 +60,7 @@ drastically simplifying management complexity:
 - Simple To Use: Once setup you care only about **one** class State 99% of time
 - Ready to go: Provides super simple template to see all states in one place
 - **[Pro]** Split screen ready: separate BigState for each screen
-- **[Pro]** Felxy transitions: Fully customizable, UniTask based logic of transition behavior
+- **[Pro]** Felxy transitions: Fully customizable, UniTask based logic of state transition behavior
 - Network ready: good fit for network state transitions
 - **[Pro]** Async preload: preload state views for instant transitions later (no load spikes)
 - Easy bootstrap: simple and short bootstrap script that use only public Api, so you can write your own
@@ -62,12 +68,6 @@ drastically simplifying management complexity:
 
 
 See [StartGuide](StartGuide.md) for usage samples
-
-
-## Flexy.GameFlow is
-
-Universal Hierarchical stater machine that will manage your  
-game states, transitions, in so simple way you never seen before
 
 
 ## Technical details
