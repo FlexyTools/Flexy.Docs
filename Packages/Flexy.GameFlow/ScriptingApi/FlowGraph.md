@@ -1,6 +1,6 @@
 # Flow Graph
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / [Index](Index.md) / FlowGraph
+[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / FlowGraph
 
 
 ## Description
@@ -30,4 +30,4 @@ Close?
 
 <br/>
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / [Index](Index.md) / FlowGraph
+[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / FlowGraph

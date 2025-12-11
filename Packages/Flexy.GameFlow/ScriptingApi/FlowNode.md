@@ -1,6 +1,6 @@
 # Flow Node
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / [Index](Index.md) / FlowNode
+[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / FlowNode
 
 
 ## Description
@@ -51,5 +51,5 @@ This means that logic changes independently from view so when you open new
 
 <br/>
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / [Index](Index.md) / FlowNode
+[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / FlowNode
 

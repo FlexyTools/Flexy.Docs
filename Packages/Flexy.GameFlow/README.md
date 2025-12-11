@@ -1,5 +1,5 @@
 ﻿![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
-[Start Guide](StartGuide.md) | [Showcase(Template project)](../GameTemplates.md) | [FAQ](FAQ.md)
+[Start Guide](StartGuide.md) | [How It Works & Use Cases](HowItWorks_UseCases.md) | [Scripting Api](ScriptingApi/Readme.md) | [Showcase(Template project)](../GameTemplates.md) 
 
 <!-- 
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) 
@@ -67,7 +67,7 @@ drastically simplifying management complexity:
 - Mature: First version was born in 2012
 
 
-See [StartGuide](StartGuide.md) for usage samples
+[Start Guide](StartGuide.md) | [How It Works & Use Cases](HowItWorks_UseCases.md) | [Scripting Api](ScriptingApi/Readme.md) | [Showcase(Template project)](../GameTemplates.md)
 
 
 ## Technical details

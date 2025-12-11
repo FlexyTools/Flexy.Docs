@@ -1,6 +1,6 @@
 # Transition Root
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / [Index](Index.md) / TransitionRoot
+[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / TransitionRoot
 
 
 ## Description
@@ -39,4 +39,4 @@ user flow will not be interrupted. When user exits pauseState it will go back to
 
 <br/>
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / [Index](Index.md) / TransitionRoot
+[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / TransitionRoot

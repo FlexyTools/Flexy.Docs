@@ -17,17 +17,17 @@ It is complete system for creating games:
 - And to the Ready to Use or learn from **Game Templates**   
 
 
-## [Flexy.Bricks\ToYs](Flexy.Bricks.md)
+## [Flexy.Bricks\ToYs](Flexy.Bricks-ToYs/Readme.md)
 
 Flexy.Bricks\ToYs is set of Architecture principles and patterns principles collected and created by me JesOb for building games
 
 
-## [Flexy.Packages](Packages.md)
+## [Flexy.Packages](Packages/Readme.md)
 
 This is the foundation that creates stable ecosystem so you can concentrate on creating games itself
 
 
-## [Flexy.GameTemplates](GameTemplates/README.md)
+## [Flexy.GameTemplates](GameTemplates/Readme.md)
 
 This is ready to use Full Project that reflects Flexy Framework principles and becomes a good foundation for new projects and learning 
 
