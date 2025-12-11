@@ -1,53 +1,16 @@
-![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
+![Img](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
 
 # Flexy Framework
 [Flexy.Fun](https://flexy.fun)
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
 | [Asset Store](https://assetstore.unity.com/publishers/113112)
 
-Documentation of all Flexy packages: Flexy.Framework, Flexy.Templates, Flexy.QoL
+Documentation of all Flexy packages: Flexy.Framework, Flexy.QoL and others
 
-## [**Flexy.AssetRefs**](Flexy.AssetRefs/README.md)
-
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Asset Store](https://u3d.as/3u78)
-| [Github](https://github.com/FlexyTools/Flexy.AssetRefs)  
-Load assets **on demand** without Addressables and Bundles  
-Almost **zero** editor setup!  
-Fast, extendable, production-proven and **Open Source!**
-
-## [**Flexy.Core**](Flexy.Core/README.md)
-
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Github](https://github.com/FlexyTools/Flexy.Core)
-
-
-Core package of **Flexy Framework** that every other package depends on  
-Consists of GameContext, Bindings, Actions and very few common utilities
-
-
-## [**Flexy.GameFlow**](Flexy.GameFlow/README.md)
-
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Github](https://github.com/FlexyTools/Flexy.GameFlow)
-
-Universal Hierarchical stater machine that will manage your  
-game states, transitions, in so simple way you never seen before
-
-## [**Flexy.UI**](Flexy.UI/README.md)
-
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Github](https://github.com/FlexyTools/Flexy.UI)
-
-Universal Hierarchical stater machine that will manage your  
-game states, transitions, in so simple way you never seen before
-
-
-## [**Flexy.GameSettings**](Flexy.GameSettings/README.md)
-
-[Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
-| [Asset Store](https://u3d.as/3u78)
-| [Github](https://github.com/FlexyTools/Flexy.AssetRefs)
-
-Easily store game settings for settings window or any other needs with just one line per setting.  
-With extensibility in mind and **Open Source!**    
+| Package                                            | Description                                                                                                                  | Links                                                                                                                                                                                 |  
+|----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Flexy.AssetRefs](Flexy.AssetRefs/README.md)       | Weak Asset References solution                                                                                               | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) \ [Asset Store](https://u3d.as/3u78) \ [Github](https://github.com/FlexyTools/Flexy.AssetRefs) |
+| [Flexy.Core](Flexy.Core/README.md)                 | Core package of **Flexy Framework** that every other package depends on                                                      | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) \ [Github](https://github.com/FlexyTools/Flexy.Core)                                           |
+| [Flexy.GameFlow](Flexy.GameFlow/README.md)         | Universal Hierarchical state machine that will manage your game states, transitions, in so simple way you never seen before  | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) \ [Github](https://github.com/FlexyTools/Flexy.GameFlow)                                       |
+| [Flexy.UI](Flexy.UI/README.md)                     | Universal Hierarchical stater machine that will manage your game states, transitions, in so simple way you never seen before | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) \ [Github](https://github.com/FlexyTools/Flexy.UI)                                             |
+| [Flexy.GameSettings](Flexy.GameSettings/README.md) | Easily store game settings for settings window or any other needs with just one line per setting                             | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) \ [Github](https://github.com/FlexyTools/Flexy.AssetRefs)                                      |
