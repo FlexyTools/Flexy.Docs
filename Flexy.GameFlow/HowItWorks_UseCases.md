@@ -1,6 +1,25 @@
-﻿# How It Works
+﻿# How It Works & Use Cases
 
 [Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / [Index](Index.md) / How It Works & Use Cases
+
+## Main Idea
+
+Game is set of states that transition to each other  
+Every state has some visual representation like UIWindow or PlayState  
+
+Because of this GameFlow looks like a UI thing, but it is not   
+It is more fundamental, but you will build UI on top of it  
+
+When you play game in Coregame Stage you see GameWorld and something on top of it  
+That something is HUD and it is main PlayState of a game   
+When that something changes, it means the game switches to a new state (in gamer mind), regardless of how it works under the hood   
+
+Any new state of Game will show new visual representation for gamer so he knows what happens, Cutscene started, Player was killed, Bossfight started, NPC dialog, entered Freecam mode  
+All they not only change game visual representation, but also how gamer interact with it, controls changed, camera changed, etc.  
+So it is truly different state of a game   
+State not only represent new State of a game but actually controls the game in current state and decide when it is ready to switch to another one 
+
+**Flexy.GameFlow** make those states and transition obvious in code too and easy to work with, develop, test
 
 ## Core Concepts
 
@@ -21,6 +40,7 @@ This is for simplicity of project organization
 ### Game Stage
 Represents big states of a game like Boot, Meta, Core, etc.  
 They always spawned as children of Graph Root and by default live as root GameObjects of DontDestroyOnLoad scene
+Every GameStage has its own GameContext
 Regular States spawned on different Stage layers by default Base layer sometimes popups layer or any other layer you create        
 By default there is one Active State on each layer but this is up to TransitionRoot to decide
 
@@ -72,32 +92,24 @@ Forward-back navigation is used to navigate through history of state switches
 Used to go back on back button press
 
 
-# Use Cases
+## Use Cases
 
-- Lite version is Free :)
-- Universal: One component State for any state (Big, small, sub, UI, Play...)
-- Extensible: Various Show/Hide callbacks and actions to override or subscribe
-- Separated View: Have 2 layers of operation Logical and View
-- Easy launch: Enter play mode from any scene
-- Launch from state: No need to launch entire game and go deep to your UI or Play State to test, debug or develop
-- Easy cleanup: Close and destory cleanup flow
-- Easy data exchange: Pass data to state and back with one line of code
-- Await Result: await for state result like popup answer or StatePlay results
-- Scene Friendly: States is responsible to load scenes. So you can load any scene from any state
-- **[Pro]** Extensible: Various logical Open/Close callbacks to override or subscribe
-- **[Pro]** Precise: await for exact moment where logical event is raised
-- GameContext based: every big state have it own Flexy.GameContext by design
-- TDD-Friendly: Start from any scene and support of disabled domain reload
-- Robust: Correct State hierarchy populates upon entering play mode for each scene
-- **[Pro]** Robust: even more control and dynamic behaviour on enter play mode
-- Simple To Use: Once setup you care only about **one** class State 99% of time
-- Ready to go: Provides super simple template to see all states in one place
-- **[Pro]** Split screen ready: separate BigState for each screen
-- **[Pro]** Felxy transitions: Fully customizable, UniTask based logic of state transition behavior
-- Network ready: good fit for network state transitions
-- **[Pro]** Async preload: preload state views for instant transitions later (no load spikes)
-- Easy bootstrap: simple and short bootstrap script that use only public Api, so you can write your own
-- Mature: First version was born in 2012
+### Just Default It
+Simple game starts from MainMenu (MetaStage) and then transition to PlayState (CoreStage)
+Bigger ones have:
+- Boot (Splash, EULA, AgeSelect, Consent, Load Profile, Load Resources, etc )
+- Meta (Main menu, Settings, Shop, Leaderboard, Arsenal, etc)
+- Core (BattleHud, KillKam, Pause, Freecam, Cutscene, Screeshot state, NPCDialog, GameOver, BossFight substate, etc) 
 
+### Split Screen
+Super easy implementation of split screen games  
+Spawn Separate GameStage for every player with their own TransitionRoots and spawn player specific objects inside GameContext of corresponding GameStage  
+This way you almost dont need to change you single player code because everyone trying to access GameStage or PlayerMob or PlayerCamera will access it from local context  
+Line like Game.UI.Killcam.Open() will open Kilcam State for current player  
+
+### TabWidows
+Windows with tabs inside very handy to implement like State with substates   
+So you can implement and test every tab in isolation and if it needs to show in other places  
+Tab window itself responsible only for switching tabs nicely with animations  
 
 [Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / [Index](Index.md) / How It Works & Use Cases
