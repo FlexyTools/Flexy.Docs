@@ -1,6 +1,6 @@
 # Service GameFlow
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / Service GameFlow
+[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Service GameFlow
 
 
 ## Description
@@ -41,4 +41,4 @@ Opener is small record struct that know open signature of state
 
 <br/>
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / Service GameFlow
+[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Service GameFlow

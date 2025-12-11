@@ -22,7 +22,7 @@ It is complete system for creating games:
 Flexy.Bricks\ToYs is set of Architecture principles and patterns principles collected and created by me JesOb for building games
 
 
-## [Flexy.Packages](Packages/Readme.md)
+## [Flexy.Framework](Framework/Readme.md)
 
 This is the foundation that creates stable ecosystem so you can concentrate on creating games itself
 

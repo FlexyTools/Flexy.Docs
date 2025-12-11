@@ -1,10 +1,9 @@
 ﻿![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
+
+[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / Flexy.GameFlow
+  
 [Start Guide](StartGuide.md) | [How It Works & Use Cases](HowItWorks_UseCases.md) | [Scripting Api](ScriptingApi/Readme.md) | [Showcase(Template project)](../GameTemplates.md) 
 
-<!-- 
-| [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) 
-| [Asset Store](https://u3d.as/3u78)
--->
 # Flexy.GameFlow
 
 Universal Hierarchical stater machine that will manage your  
@@ -75,3 +74,5 @@ drastically simplifying management complexity:
 - C# 10
 - Native C# Nullability annotations
 - Fast Enter Play Mode support
+
+[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / Flexy.GameFlow

@@ -1,6 +1,6 @@
 # Game Stage
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / Game Stage
+[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Game Stage
 
 This is the main building block in GameFlow
 Typical game consists of 3 Stages 
@@ -58,4 +58,4 @@ But UI System like Flexy.UI depends on it
 
 Ready to use [Barley-Breaks Flexy.GameTemplate](../GameTemplates.md) showcase all currently available flexy packages including GameFlow
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / [Scripting Api](Readme.md) / Game Stage
+[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Game Stage

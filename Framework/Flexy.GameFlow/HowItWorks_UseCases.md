@@ -1,6 +1,6 @@
 ﻿# How It Works & Use Cases
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / How It Works & Use Cases
+[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / [Flexy.GameFlow](README.md) / How It Works & Use Cases
 
 ## Main Idea
 
@@ -112,4 +112,4 @@ Windows with tabs inside very handy to implement like State with substates
 So you can implement and test every tab in isolation and if it needs to show in other places  
 Tab window itself responsible only for switching tabs nicely with animations  
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](README.md) / How It Works & Use Cases
+[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / [Flexy.GameFlow](README.md) / How It Works & Use Cases

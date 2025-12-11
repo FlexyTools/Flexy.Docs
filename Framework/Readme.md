@@ -1,10 +1,11 @@
 ![Img](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
 
 # Flexy Framework
-[Flexy.Tools](README.md) / Packages
+[Flexy.Tools](README.md) / Framework
 
-Documentation of all Flexy packages: Flexy.Framework, Flexy.QoL and others
+Documentation of all Flexy.Framework packages: Base, Meta, Core, QoL and others
 
+## Base
 | Package                                            | Description                                                                                                                  | Links                                                                                                                                                                                 |  
 |----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Flexy.AssetRefs](Flexy.AssetRefs/README.md)       | Weak Asset References solution                                                                                               | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) \ [Asset Store](https://u3d.as/3u78) \ [Github](https://github.com/FlexyTools/Flexy.AssetRefs) |
@@ -14,4 +15,4 @@ Documentation of all Flexy packages: Flexy.Framework, Flexy.QoL and others
 | [Flexy.GameSettings](Flexy.GameSettings/README.md) | Easily store game settings for settings window or any other needs with just one line per setting                             | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) \ [Github](https://github.com/FlexyTools/Flexy.AssetRefs)                                      |
 
 
-[Flexy.Tools](README.md) / Packages
+[Flexy.Tools](README.md) / Framework
