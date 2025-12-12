@@ -20,11 +20,11 @@ So we have 6 axes of freedom here :)
 
 ## Methods
 
-| Method                                              | Description                                                                                               |  
-|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Open ( AssetRef<GameStage> stageRef )               | Load, Spawn and Open Stage by AssetRef                                                                    |  
-| Open ( AssetRef<State> stateRef, State callSource ) | Load if not loadedm Spawn if not spawned and Open state by AssetRef and callSource to know where to spawn |
-| TryGoBack                                           | Try Go Back in history of opened states if current node allows                                            |
+| Method                        | Description                                                                                                    |  
+|-------------------------------|----------------------------------------------------------------------------------------------------------------|
+| Open ( stageRef )             | Load, Spawn and Open Stage by **stageRef**                                                                     |  
+| Open ( stateRef, callSource ) | Load if not loaded, Spawn if not spawned and Open state by **stageRef**. **callSource** to know where to spawn |
+| TryGoBack                     | Try Go Back in history of opened states if current node allows                                                 |
 
 Close?
 

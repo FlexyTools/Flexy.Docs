@@ -40,7 +40,7 @@ This is for simplicity of project organization
 ### Game Stage
 Represents big states of a game like Boot, Meta, Core, etc.  
 They always spawned as children of Graph Root and by default live as root GameObjects of DontDestroyOnLoad scene
-Every GameStage has its own GameContext
+Also every GameStage has its own GameContext
 Regular States spawned on different Stage layers by default Base layer sometimes popups layer or any other layer you create        
 By default there is one Active State on each layer but this is up to TransitionRoot to decide
 
@@ -74,6 +74,9 @@ You can define any custom logic of state transitions like animations or overlays
 Typically GameStage will show Loader screen on opening and closing of itself but sometimes is it handy to have single LoaderScreen covering transition between two GameStages  
 because GameStages are Fat, and they often unload old scenes and load new ones as part of transition   
 e.g. transition from Meta to Core. Meta first unload Lobby scene and than Core will load requested BattleMap scene 
+
+### Transition Operation
+asd
 
 ### Flow Graph
 Graph of all opened nodes     

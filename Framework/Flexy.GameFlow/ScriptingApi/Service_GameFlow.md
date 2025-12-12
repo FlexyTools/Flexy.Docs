@@ -1,3 +1,5 @@
+![Img](Src/Service_GameFlow.png)
+
 # Service GameFlow
 
 [Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Service GameFlow
@@ -12,8 +14,6 @@ Opener is small record struct that know open signature of state
 
 
 ## Component
-
-![Img](Src/Service_GameFlow.png)
 
 | Field                  | Description                                   |  
 |------------------------|-----------------------------------------------|
@@ -38,6 +38,9 @@ Opener is small record struct that know open signature of state
 | GetOpener_ByStateType< T > ( State src )               | Get Opener by State Type                                                 |
 | GetOpener_ByOpenerType< T > ( State src )              | Get Opener by Opener Type                                                |
 | GetRefTypeName ( AssetRef<State> stateRef )            | Get TypeName of state by reference. Mostly for debug purposes            |
+|                                                        |                                                                          |
+| virtual Update                                         | Calls TryGoBack when BackAction is triggered                             |
+
 
 <br/>
 

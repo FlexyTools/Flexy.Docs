@@ -1,3 +1,5 @@
+![Img](Src/GameFlowBootstrap.png)
+
 # Game Flow Bootstrap
 
 [Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / GameFlowBootstrap
@@ -10,11 +12,9 @@ Entry point script/prefab that bootstraps GameFlow
 It spawns Service_Gameflow, start GameStage, additioanl states, and target state
 Target State is used to fill TestCase DropDawn
 
-
+All MonoBehaviours on bootstrap prefab will be added into the global context (Handy for boot customization on test scenes) 
 
 ## Component
-
-![Img](Src/GameFlowBootstrap.png)
 
 | Field                 | Description                                                         |  
 |-----------------------|---------------------------------------------------------------------|
