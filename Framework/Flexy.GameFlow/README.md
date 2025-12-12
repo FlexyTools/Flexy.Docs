@@ -41,29 +41,30 @@ drastically simplifying management complexity:
 ## Key Strengths
 
 - Lite version is Free :)
+- Mature: First version was born in 2012
 - Universal: One component State for any state (Big, small, sub, UI, Play...)
 - Extensible: Various Show/Hide callbacks and actions to override or subscribe
-- Separated View: Have 2 layers of operation Logical and View
+- Simple To Use: Once setup you care only about **one** class State 99% of time
 - Easy launch: Enter play mode from any scene
 - Launch from state: No need to launch entire game and go deep to your UI or Play State to test, debug or develop
 - Easy cleanup: Close and destory cleanup flow
 - Easy data exchange: Pass data to state and back with one line of code
 - Await Result: await for state result like popup answer or StatePlay results
 - Scene Friendly: States is responsible to load scenes. So you can load any scene from any state
-- **[Pro]** Extensible: Various logical Open/Close callbacks to override or subscribe
-- **[Pro]** Precise: await for exact moment where logical event is raised
+- Easy bootstrap: simple and short bootstrap script that use only public Api, so you can write your own
 - GameContext based: every big state have it own Flexy.GameContext by design
 - TDD-Friendly: Start from any scene and support of disabled domain reload
-- Robust: Correct State hierarchy populates upon entering play mode for each scene
-- **[Pro]** Robust: even more control and dynamic behaviour on enter play mode
-- Simple To Use: Once setup you care only about **one** class State 99% of time
-- Ready to go: Provides super simple template to see all states in one place
-- **[Pro]** Split screen ready: separate BigState for each screen
-- **[Pro]** Felxy transitions: Fully customizable, UniTask based logic of state transition behavior
+- Separated View: Have 2 layers of operation Logical and View
 - Network ready: good fit for network state transitions
-- **[Pro]** Async preload: preload state views for instant transitions later (no load spikes)
-- Easy bootstrap: simple and short bootstrap script that use only public Api, so you can write your own
-- Mature: First version was born in 2012
+- Robust: Correct State hierarchy populates upon entering play mode for each scene
+
+### Pro Features
+- Robust: even more control and dynamic behaviour on enter play mode
+- Felxy transitions: Fully customizable, UniTask based logic of state transition behavior
+- Extensible: Various logical Open/Close callbacks to override or subscribe
+- Precise: await for exact moment where logical event is raised
+- Async preload: preload state views for instant transitions later (no load spikes)
+- Split screen ready: separate BigState for each screen
 
 
 [Start Guide](StartGuide.md) | [How It Works & Use Cases](HowItWorks_UseCases.md) | [Scripting Api](ScriptingApi/Readme.md) | [Showcase(Template project)](../GameTemplates.md)
