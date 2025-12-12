@@ -60,8 +60,9 @@ drastically simplifying management complexity:
 
 ### Pro Features
 - Robust: even more control and dynamic behaviour on enter play mode
-- Felxy transitions: Fully customizable, UniTask based logic of state transition behavior
 - Extensible: Various logical Open/Close callbacks to override or subscribe
+- Layers support: place substates on different layers in state e.g. popups layer 
+- Felxy transitions: Fully customizable, UniTask based logic of state transition behavior
 - Precise: await for exact moment where logical event is raised
 - Async preload: preload state views for instant transitions later (no load spikes)
 - Split screen ready: separate BigState for each screen
