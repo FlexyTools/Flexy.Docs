@@ -5,7 +5,9 @@
 
 ## Description
 
-This graph stores state graph starting from root FlowNode and allows to manipulate it   
+Inherits from: object
+
+Stores state graph starting from root FlowNode and allows to manipulate it   
 Each node in graph have parent, firstchild, left and right siblings also history forward and back nodes  
 So we have 6 axes of freedom here :)
 

@@ -6,7 +6,7 @@
 
 # Flexy.GameFlow
 
-Universal Hierarchical stater machine that will manage your  
+Universal Hierarchical Dynamic state machine that will manage your  
 game states, transitions, in so simple way you never seen before
 
 Any Game is set of Game States that transition into each other  

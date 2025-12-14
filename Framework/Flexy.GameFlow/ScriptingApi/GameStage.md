@@ -4,7 +4,9 @@
 
 ## Description
 
-Represents big states of a game like Boot, Meta, Core, etc.  
+Inherits from: State
+
+Big state of a game like Boot, Meta, Core, etc.  
 They always spawned as children of Graph Root and by default live as root GameObjects of DontDestroyOnLoad scene
 Also every GameStage has its own GameContext
 
@@ -14,7 +16,7 @@ Also every GameStage has its own GameContext
 |-------------------|----------------------------------|
 | Context           | GameContext spawned on GameState |
 | Flow              | Access to Service_GameFlow       |
-
+see [State](State.md) for inherited ones
 
 ## Methods
 
@@ -27,6 +29,6 @@ Also every GameStage has its own GameContext
 | PreloadAsync ( stateRef )                            | Preload State Async by **stateRef** if not loaded already                                                  |
 | PreloadLibraryAsync ( library, includeDependencies ) | Preload all states of **library** optional with **dependencies**                                           |
 | ClearStatesCache ( async )                           | Clean States cache by destroying those who dont used by nodes. Optionally **async**                        |
-
+see [State](State.md) for inherited ones
 
 [Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Game Stage

@@ -5,36 +5,27 @@
 
 ## Description
 
-This graph stores state graph starting from root FlowNode and allows to manipulate it   
-Each node in graph have parent, firstchild, left and right siblings also history forward and back nodes  
-So we have 6 axes of freedom here :)
+Inherits from: object
 
+Responsible for Switching states and storing current Tip Node and Active State Nodes to know where we are currently
+Launches TransitionOperation in correct frame spot if Transition Requested 
 
 ## Properties
 
-| Property | Description              |  
-|----------|--------------------------|
-| Service  | Access Service_GameFlow  |
-| Root     | Access RootNode of graph |  
+| Property    | Description                                       |  
+|-------------|---------------------------------------------------|
+| Tip Node    | FlowNode tha is logically last one in History     |
+| Active Node | FlowNode tha is last showed and currently showing |  
 
 
 ## Methods
 
-| Method                                              | Description                                                                                               |  
-|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Open ( AssetRef<GameStage> stageRef )               | Load, Spawn and Open Stage by AssetRef                                                                    |  
-| Open ( AssetRef<State> stateRef, State callSource ) | Load if not loadedm Spawn if not spawned and Open state by AssetRef and callSource to know where to spawn |
-| TryGoBack                                           | Try Go Back in history of opened states if current node allows                                            |
-
-
-
-### LockOn\UnLock (Pro feature)
-Allows to lock graph on some state so any **external** attempts to change state will open it before locked one in graph   
-Current state is allowed to change itself to any other
-
-E.g. in Networked FPS you open PauseState and lock it. You can freely navigate to setting and other states but
-if game try to put you from PlayState to KilledState and back it will happens under pause menu so
-user flow will not be interrupted. When user exits pauseState it will go back to PlayState or KilledState based on what is actually active here
+| Method         | Description                                                                                                |  
+|----------------|------------------------------------------------------------------------------------------------------------|
+| Try Go Back    | Try Go Back in history of opened states if current state allows                                            |
+| Transition Now | Launch Transition logic now. Mostly for Bootstrapper                                                       |
+| LockOn         | Lock FlowNode so any try to open new state not from Tip Node will be opened behind Locked node in historey |
+| UnLock         | Unlock locked node                                                                                         |
 
 
 <br/>

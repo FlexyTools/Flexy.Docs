@@ -1,64 +1,78 @@
-# Flow Node
+# State
 
-[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / FlowNode
+[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / State
 
 
 ## Description
 
-It is building block of FlowGraph RootNode graph create on construction, all other created from Open methods
+Inherits from: Flexy.Core.Binding.BindableBehaviour
 
-   
-We have 2 layers of operation Logical and View
- - Nodes is logical one
- - States is view one
+Main working horse 
+Derive from this class to create states of Your Game create prefabs of them and Open when needed
 
-This means that logic changes independently from view so when you open new  
+
+## Component
+
+| Fields  | Description                             |  
+|---------|-----------------------------------------|
+| Showing | FlexyAction that raise right after show |
+| Hiding  | FlexyAction that raise right after hide |
 
 ## Properties
 
-| Property          | Description                                                    |  
-|-------------------|----------------------------------------------------------------|
-| Graph             | Access FlowGraph                                               |
-| State             | State instance of this node                                    |
-|                   |                                                                |
-| FullyInited       | If it is false in OnShow than first show came from BackShow    |
-| HasShowedChildren | true when at least one child of this node is showed            |
-| OpenParams        | Parameters this node is opened with                            |
-| StateData         | Custom data linked from node state                             |
-| UserData          | Custom data linked from outside node state                     |
-|                   |                                                                |
-| Back              | Link to previous node in history                               |
-| Forward           | Link to next node in history                                   |
-| PrevSibling       | Link to prev sibling node                                      |
-| NextSibling       | Link to next sibling node                                      |
-|                   |                                                                |
-| Parent            | Link to parent node                                            |
-| LayerName         | Name of layer this node spawned on                             |
-| BaseLayer         | Base layer for children of this node (have link to next layer) |
-| FirstChild        | Link to first child node                                       |
-|                   |                                                                |
-| IsOpened          | true if node still part of the graph false otherwise           |
-| IsShowed          | true if node state is currently showed                         |
-| GameStageNode     | gets neares parent GameStage node                              |
-
+| Property                | Description                                                        |  
+|-------------------------|--------------------------------------------------------------------|
+| Graph                   | Access FlowGraph                                                   |
+| Node                    | FlowNode currently connected to State                              |
+| PrefabRef               | AssetRef to state Prefab                                           |
+|                         |                                                                    |
+| OpenParams              | Parameters this node is opened with                                |
+|                         |                                                                    |
+| IsOpened                | true if node still part of the graph false otherwise               |
+| IsShowed                | true if node state is currently showed                             |
+| AnySubStateOpened       | true if node has opened substates                                  |
+|                         |                                                                    |
+| GameStage               | gets neares parent GameStage                                       |
+|                         |                                                                    |
+| virtual MainSubStateRef | Must return StateRef in case state designerd to have main substate |
+see [BindableBehaviour](../../Flexy.Core/Bindings.md) for inherited ones
 
 ## Methods
 
-| Method              | Description                                                                                           |  
-|---------------------|-------------------------------------------------------------------------------------------------------|
-| Close               | Close this node                                                                                       |  
-| SpawnTransitionRoot | Spawn Transition Root in this node so all child transitions will do in parralel with global ones      |
-
-
-## Extensions
-
-| Method    | Description                                                                                           |  
-|-----------|-------------------------------------------------------------------------------------------------------|
-| WaitClose | Close this node                                                                                       |  
-| WaitHide  | Spawn Transition Root in this node so all child transitions will do in parralel with global ones      |
-
+| Method                          | Description                                                                                                                     |  
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| OpenMainSubState                | Opens Main Sub State if State has MainSubStateRef and close all to the main if it already opened                                |
+| Close                           | Close state. GameObject remain alive and will be reused for future opening                                                      |
+| CloseAndDestroy                 | Close state and Destroy state GameObject                                                                                        |
+| CloseSubStates                  | Close all substates with or whtout main substate                                                                                |
+|                                 |                                                                                                                                 |
+| RebindAllHierarchy              | Get all BindableBehaviours in Children and call RebindAll on them                                                               |                                
+|                                 |                                                                                                                                 |
+| virtual TryGoBack               | override reaction ToTryGoBack, return true to allow go back otherwise false                                                     |  
+| virtual GetLayers               | override to setup additional layers for this state. You need to provide InstantiateSubState and GetTransition to make them work |
+| virtual InstantiateSubState     | override to decide where to instantiate each substate. For GameStages by default it is _statesContainer                         |
+| virtual DestroySubState         | override to correctly destroy Instantiated Substate                                                                             |
+|                                 |                                                                                                                                 |
+| virtual OnOpen                  | Event. Happens when State Open                                                                                                  |
+| virtual OnShow                  | Event. Happens when State Shows first time for Opened FlowNode                                                                  |
+| virtual OnForward               | Event. Happens when next State Open when this stop becoming Last one in history                                                 |
+| virtual OnFwdHide               | Event. Happens when State Hidden because next one in hostory Showing                                                            |
+| virtual OnBack                  | Event. Happens when next State closed and current become last in history again                                                  |
+| virtual OnBackShow              | Event. Happens when State Showing because next was closed                                                                       |
+| virtual OnClosing               | Event. Happend when State is closed and no more part of history                                                                 |
+| virtual OnHide                  | Event. Happens when State Hidden because node closed and no more part of history                                                |                                                                        |
+|                                 |                                                                                                                                 |
+| virtual OnFirstChildOpen        | Event. Happens before first child opened                                                                                        |
+| virtual OnFirstChildShow        | Event. Happens before first child showed                                                                                        |
+| virtual OnLastChildClose        | Event. Happens after last child hide                                                                                            |
+| virtual OnLastChildHide         | Event. Happens after last child hide                                                                                            |
+| virtual OnFirstChildOpenOnLayer | Event. Happens before first child opened on layer                                                                               |
+| virtual OnFirstChildShowOnLayer | Event. Happens before first child showed on layer                                                                               |
+| virtual OnLastChildCloseOnLayer | Event. Happens after last child hide on layer                                                                                   |
+| virtual OnLastChildHideOnLayer  | Event. Happens after last child hide on layer                                                                                   |
+see [BindableBehaviour](../../Flexy.Core/Bindings.md) for inherited ones
 
 <br/>
 
-[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / FlowNode
+[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / State
 

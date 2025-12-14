@@ -7,6 +7,8 @@
 
 ## Description
 
+Inherits from: ScriptableObject
+
 Scriptable Object that holds references to all states of the game  
 Makes them available in runtime and easily be collected for builds 
 

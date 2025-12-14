@@ -5,14 +5,11 @@
 
 ## Description
 
-It is building block of FlowGraph RootNode graph create on construction, all other created from Open methods
+Inherits from: object
 
-   
-We have 2 layers of operation Logical and View
- - Nodes is logical one
- - States is view one
-
-This means that logic changes independently from view so when you open new  
+It is building block of FlowGraph  
+RootNode graph creates on construction, all others created from Open methods
+Upon calling FlowGraph.Open new Node is created, added to history and returned back to caller
 
 ## Properties
 
@@ -39,15 +36,31 @@ This means that logic changes independently from view so when you open new
 |                   |                                                                |
 | IsOpened          | true if node still part of the graph false otherwise           |
 | IsShowed          | true if node state is currently showed                         |
-| GameStageNode     | gets neares parent GameStage node                              |
+| TransitionRoot    | gets nearest TransitionRoot in parent hierarchy                |
+| GameStageNode     | gets nearest parent GameStage node                             |
 
 
 ## Methods
 
-| Method              | Description                                                                                           |  
-|---------------------|-------------------------------------------------------------------------------------------------------|
-| Close               | Close this node                                                                                       |  
-| SpawnTransitionRoot | Spawn Transition Root in this node so all child transitions will do in parralel with global ones      |
+| Method              | Description                                                                                                             |  
+|---------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Close               | Close this node                                                                                                         |  
+| SpawnTransitionRoot | Spawn Transition Root in this node so all child transitions will do in parralel with global ones                        |
+| WaitResult < T >    | Async Operation to wait for state close and return result of ExpectedType (state must implement IStateWithResult < T >) |
+
+
+## Extensions
+
+| Method          | Description                                                                               |  
+|-----------------|-------------------------------------------------------------------------------------------|
+| WaitShow        | Async wait for Node WaitShow event. Continuation happens right after event in code        |  
+| WaitForward     | Async wait for Node WaitForward event. Continuation happens right after event in code     |
+| WaitForwardHide | Async wait for Node WaitForwardHide event. Continuation happens right after event in code |
+| WaitBack        | Async wait for Node WaitBack event. Continuation happens right after event in code        |
+| WaitBackShow    | Async wait for Node WaitBackShow event. Continuation happens right after event in code    |
+| WaitClose       | Async wait for Node WaitClose event. Continuation happens right after event in code       |
+| WaitHide        | Async wait for Node WaitHide event. Continuation happens right after event in code        |
+
 
 <br/>
 
