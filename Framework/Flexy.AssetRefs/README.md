@@ -41,6 +41,7 @@ more complex systems later.
 - Asset Loader can be totally replaced (Bundles, Addressables, Custom, ...)
 - Editor-Friendly: works seamlessly in the Editor without extra setup
 - SceneRef: allows loading scenes in the editor without adding to Build Settings
+- Stay in Control: additive scene loading by default, full control when to load and when to unload every scene
 - Toggle runtime/editor behavior with simple menu item click
 - Clean Inspector: looks like regular asset reference
 - Production-Proven: used in released games since 2019

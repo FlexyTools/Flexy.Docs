@@ -23,6 +23,11 @@ You define **AssetRefs** and **SceneRefs** anywhere you want and they show up in
 Then you load those using provided [LoadingMethods](ExtensionPoints.md) or using your own
 
 Additionally SceneRef has static Method to load DummyScene - it will create new scene with Camera and AudioListener in it
+Additional DummyScene URP will init correct scene for URP render pipeline
+
+Note: By default SceneRef load Scenes Additively so loading scene dont mean unload everything else  
+To load single and unload everything else you must pass parameter explicitly  
+To read more about additive vs single scene loading in Unity read [Unity Docs](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/SceneManagement.LoadSceneMode.Additive.html)  
 
 ```csharp
 await SceneRef.LoadDummySceneAsync();

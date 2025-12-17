@@ -1,5 +1,4 @@
-**Flexy.AssetRefs Pipeline**
-==================== 
+# Flexy.AssetRefs Pipeline
 
 [Index](README.md) | [Extension Points](ExtensionPoints.md) | [Start Guide](StartGuide.md) | [FAQ](FAQ.md)
 

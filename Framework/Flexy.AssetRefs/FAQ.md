@@ -1,12 +1,11 @@
-**Flexy.AssetRefs FAQ**
-==================== 
+# Flexy.AssetRefs FAQ
 
 **Q: I am loading assets by direct references what the benefits of using AssetRefs?**
 > - load time & memory optimisation - big assets that don't need to be loaded from the start will not consume memory and loading time e.g. BossPrefab 
 > 
 > **how to migrate**  
 > Replace references like GameObject or Sprite with AssetRef<GameObject> AssetRefs<Sprite> accordingly  
-> use _assetRef.LoadAssetSync( ) to load it when you need
+> use _assetRef.LoadAssetSync() to load it when you need
 
 
 **Q: I am loading assets from Resources by names what the benefits of using AssetRefs?**
