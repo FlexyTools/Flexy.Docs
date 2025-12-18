@@ -1,13 +1,11 @@
 ﻿![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
 
 [Flexy.Tools](../../README.md) / [Framework](../Readme.md) / Flexy.GameFlow
-  
-[Start Guide](StartGuide.md) | [How It Works & Use Cases](HowItWorks_UseCases.md) | [Scripting Api](ScriptingApi/Readme.md) | [Showcase(Template project)](../GameTemplates.md) 
 
 # Flexy.GameFlow
 
 Universal Hierarchical Dynamic state machine that will manage your  
-game states, transitions, in so simple way you never seen before
+game states, scenes and transitions, so simple and extendable you have never seen before
 
 Any Game is set of Game States that transition into each other  
 Big ones like Boot, Lobby(Metagame), Battle(Coregame)  
@@ -15,6 +13,11 @@ And small ones like main menu, settings, loading, play state, pause state, cutsc
 
 Hierarchical GameState machine is fundamental piece of every game
 If you just thought about UI Manager no! It is not UI manager but Flexy.UI builds on top of it 
+
+[Start Guide](StartGuide.md) | 
+[How It Works & Use Cases](HowItWorks_UseCases.md) | 
+[Scripting Api](ScriptingApi/Readme.md) | 
+[Showcase(Template project)](../../GameTemplates/Barley-Breaks/Readme.md)
 
 ## Want to control game flow with ease but:
 
