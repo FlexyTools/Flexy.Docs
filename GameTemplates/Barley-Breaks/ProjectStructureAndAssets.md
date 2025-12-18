@@ -1,6 +1,6 @@
 ![Img](Src/GamePreview.webp)
 
-[Flexy.Tools](../../README.md) / [Game Templates](../Readme.md) / [Barley-Breaks](Readme.md) / Project Structure And Assets 
+[Flexy.Tools](../../Readme.md) / [Game Templates](../Readme.md) / [Barley-Breaks](Readme.md) / Project Structure And Assets 
 
 # Project Structure And Assets
 
@@ -72,4 +72,4 @@ Or you can Build from Build Settings but then version info will not be updated b
 
 <br/>
 
-[Flexy.Tools](../../README.md) / [Game Templates](../Readme.md) / [Barley-Breaks](Readme.md) / Project Structure And Assets
+[Flexy.Tools](../../Readme.md) / [Game Templates](../Readme.md) / [Barley-Breaks](Readme.md) / Project Structure And Assets

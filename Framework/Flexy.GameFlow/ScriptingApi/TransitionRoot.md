@@ -1,6 +1,6 @@
 # Transition Root
 
-[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / TransitionRoot
+[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / TransitionRoot
 
 
 ## Description
@@ -30,4 +30,4 @@ Launches TransitionOperation in correct frame spot if Transition Requested
 
 <br/>
 
-[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / TransitionRoot
+[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / TransitionRoot

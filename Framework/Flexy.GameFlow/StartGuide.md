@@ -1,5 +1,5 @@
 ﻿![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
-[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / [Flexy.GameFlow](README.md) / Start Guide
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.GameFlow](Readme.md) / Start Guide
 
 <!-- 
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) 
@@ -38,4 +38,4 @@ Here is very breaf explanation of work with GameFlow, but better look at Barley-
 - In Playmode you will see state of GameFlow and your GameContexts  
 ![Img](Src/Guide_PlayModeState.png)
 
-[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / [Flexy.GameFlow](README.md) / Start Guide
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.GameFlow](Readme.md) / Start Guide

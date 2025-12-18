@@ -1,6 +1,6 @@
 ﻿# How It Works & Use Cases
 
-[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / [Flexy.GameFlow](README.md) / How It Works & Use Cases
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.GameFlow](Readme.md) / How It Works & Use Cases
 
 ## Main Idea
 
@@ -133,4 +133,4 @@ Tab window itself responsible only for switching tabs nicely with animations
 
 <br/>
 
-[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / [Flexy.GameFlow](README.md) / How It Works & Use Cases
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.GameFlow](Readme.md) / How It Works & Use Cases

@@ -1,6 +1,6 @@
 # Flexy.Core Common Utilities 
 
-[Home](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md)
+[Home](Readme.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md)
 
 
 ## Extensions
@@ -28,4 +28,4 @@
 **SpanList, TempList** - temp lists for temporary collection in algorithms without GC allocation  
 
 
-[Home](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md)
+[Home](Readme.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md)

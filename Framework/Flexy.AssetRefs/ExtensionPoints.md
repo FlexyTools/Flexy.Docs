@@ -1,7 +1,7 @@
 **Flexy.AssetRefs Extension Points**
 ==================== 
 
-[Index](README.md) | [Start Guide](StartGuide.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)
+[Index](Readme.md) | [Start Guide](StartGuide.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)
 
 ## LoadExtensions
 
@@ -89,4 +89,4 @@ await loadBossTask; // wait for activation
 **Warning**  
 You can not **store** LoadTasks! They rented from pool and will be returned to pool after 10 frames once loading done 
 
-[Index](README.md) | [Start Guide](StartGuide.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)
+[Index](Readme.md) | [Start Guide](StartGuide.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)

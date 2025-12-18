@@ -1,6 +1,6 @@
 # Flexy.AssetRefs Pipeline
 
-[Index](README.md) | [Extension Points](ExtensionPoints.md) | [Start Guide](StartGuide.md) | [FAQ](FAQ.md)
+[Index](Readme.md) | [Extension Points](ExtensionPoints.md) | [Start Guide](StartGuide.md) | [FAQ](FAQ.md)
 
 
 **Pipeline** is SciptableObject with list of **Tasks** that collects Refs and make sure they can be loaded in runtime  
@@ -69,4 +69,4 @@ Pipeline Task **ResourcesPopulateRefs** will create specific assets in path Asse
 they need to wire up loading of collected assets from Unity Resources Api and this path can be ignored in Source Control 
 
 
-[Index](README.md) | [Extension Points](ExtensionPoints.md) | [Start Guide](StartGuide.md) | [FAQ](FAQ.md)
+[Index](Readme.md) | [Extension Points](ExtensionPoints.md) | [Start Guide](StartGuide.md) | [FAQ](FAQ.md)

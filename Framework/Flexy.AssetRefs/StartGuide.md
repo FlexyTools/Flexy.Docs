@@ -1,7 +1,7 @@
 **Flexy.AssetRefs Start Guide**
 ==================== 
 
-[Index](README.md) | [Extension Points](ExtensionPoints.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)
+[Index](Readme.md) | [Extension Points](ExtensionPoints.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)
 
 Ref Types
 --------
@@ -37,4 +37,4 @@ await SceneRef.LoadDummySceneAsync();
 var dummySceneLoadTask = SceneRef.LoadDummySceneAsync();
 ```
 
-[Index](README.md) | [Extension Points](ExtensionPoints.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)
+[Index](Readme.md) | [Extension Points](ExtensionPoints.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)

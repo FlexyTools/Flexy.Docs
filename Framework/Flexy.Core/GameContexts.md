@@ -1,6 +1,6 @@
 # **Flexy.Core GameContext**
 
-[Home](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Common Utilities](CommonUtilities.md)
+[Home](Readme.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Common Utilities](CommonUtilities.md)
 
 
 Flexy way to think about game dependencies and their composition. **Context based**  
@@ -54,4 +54,4 @@ You can access services directly or of you wish you can write simple methof that
 Pairing with GameFlow package it is very powerful system to manager game flow and services
 FlexyTemplate Barley-Break shows many project organisation concepts and showcase proposed way to use GameContexts 
 
-[Home](README.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Common Utilities](CommonUtilities.md)
+[Home](Readme.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Common Utilities](CommonUtilities.md)

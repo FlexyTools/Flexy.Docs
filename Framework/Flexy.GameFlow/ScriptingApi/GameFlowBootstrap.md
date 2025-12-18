@@ -2,7 +2,7 @@
 
 # Game Flow Bootstrap
 
-[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / GameFlowBootstrap
+[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / GameFlowBootstrap
 
 
 ## Description
@@ -26,4 +26,4 @@ All MonoBehaviours on bootstrap prefab will be added into the global context (Ha
 | Target State      | Optional. Last state to spawn and source of TestCase Dropdown cases |
 
 
-[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / GameFlowBootstrap
+[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / GameFlowBootstrap

@@ -1,7 +1,7 @@
 ![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
 
 # Flexy Game Templates
-[Home](README.md)
+[Home](Readme.md)
 
 List of all Flexy Game Templates 
 

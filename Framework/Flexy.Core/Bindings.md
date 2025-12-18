@@ -1,6 +1,6 @@
 # **Flexy.Core Bindings**
 
-[Home](README.md) | [Actions](Actions.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)
+[Home](Readme.md) | [Actions](Actions.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)
 
 
 Core of Flexy.Binding system  
@@ -16,4 +16,4 @@ It is here because it can be used not only in UI but in coregame too
 **CallBinder_ButtonClick** - call binder implementation sample    
   
 
-[Home](README.md) | [Actions](Actions.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)
+[Home](Readme.md) | [Actions](Actions.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)

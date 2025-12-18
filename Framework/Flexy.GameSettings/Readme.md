@@ -2,7 +2,7 @@
 
 # Flexy.GameSettings
 
-[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / Flexy.GameSettings
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameSettings
 
 <!--
 [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
@@ -14,7 +14,8 @@ Easily store game settings for settings window or any other needs with just one 
 By default it uses PlayerPrefs to store settings, but you can provide your own storage.  
 Easy extensible by defining settings tab classes.
 
-[Github](https://github.com/FlexyTools/Flexy.GameSettings)
+[Github](https://github.com/FlexyTools/Flexy.GameSettings) | 
+[AssetStore](https://u3d.as/3LKx)
 
 Supports:
 - String setting
@@ -94,4 +95,4 @@ Add package from git URL: https://github.com/FlexyTools/Flexy.GameSettings
 
 <br/>
 
-[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / Flexy.GameSettings
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameSettings

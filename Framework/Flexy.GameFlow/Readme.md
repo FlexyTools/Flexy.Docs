@@ -1,6 +1,6 @@
 ﻿![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
 
-[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / Flexy.GameFlow
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameFlow
 
 # Flexy.GameFlow
 
@@ -41,7 +41,7 @@ drastically simplifying management complexity:
 - **Easy to clean up**
 
 
-## Key Strengths
+## Key Strengths~~~~
 
 - Lite version is Free :)
 - Mature: First version was born in 2012
@@ -80,4 +80,4 @@ drastically simplifying management complexity:
 - Native C# Nullability annotations
 - Fast Enter Play Mode support
 
-[Flexy.Tools](../../README.md) / [Framework](../Readme.md) / Flexy.GameFlow
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameFlow

@@ -1,6 +1,6 @@
 # Scripting Api
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / ScriptingApi
+[Flexy.Tools](../Readme.md) / [Flexy.GameFlow](../Readme.md) / ScriptingApi
 
 
 
@@ -18,4 +18,4 @@
 | [Flow Node](FlowNode.md)                       | It is building block of FlowGraph                                                                                   |
 
 
-[Flexy.Tools](../README.md) / [Flexy.GameFlow](../README.md) / ScriptingApi
+[Flexy.Tools](../Readme.md) / [Flexy.GameFlow](../Readme.md) / ScriptingApi

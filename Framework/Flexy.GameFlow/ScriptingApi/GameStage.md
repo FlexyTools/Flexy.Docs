@@ -1,6 +1,6 @@
 # Game Stage
 
-[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Game Stage
+[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Game Stage
 
 ## Description
 
@@ -31,4 +31,4 @@ see [State](State.md) for inherited ones
 | ClearStatesCache ( async )                           | Clean States cache by destroying those who dont used by nodes. Optionally **async**                        |
 see [State](State.md) for inherited ones
 
-[Flexy.Tools](../../../README.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Game Stage
+[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Game Stage
