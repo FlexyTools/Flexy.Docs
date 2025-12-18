@@ -2,11 +2,13 @@
 
 [Flexy.Tools](../../README.md) / [Game Templates](../Readme.md) / Barley-Breaks
 
-# Game Tamplate Barley-Breaks
+# FlexyTT: Barley-Break
 
-Simple Barley-Breaks Game with leaderboard and few field sizes   
+Simple Barley-Break Game with leaderboard and few field sizes  
+It is create to showcase Flexy Framework and Flexy Project structure so Coregame here is less singnificant part  
+[Github](https://github.com/FlexyTools/Flexy-TT.BarleyBreak)   
 
-Showcases:  
+### Showcases:  
 - Flexy.AssetRefs
 - Flexy.GameSettings
 - Flexy.Core (GameContext, EventAction, Binding)
@@ -14,8 +16,9 @@ Showcases:
 - Flexy.UI
 - Flexy Project Structure
 
-Also here you can see how to structure project and code to keep it clean, modular and easy to maintain.
+Also every FlexyTT show you how to structure project and code to keep it clean, modular and easy to maintain
 
+### Structure:
 - [Project structure and Assets](ProjectStructureAndAssets.md)
 - [Code Structure and Flexy Project Template](CodeStructureAndFlexyProjectTemplate.md) 
 
