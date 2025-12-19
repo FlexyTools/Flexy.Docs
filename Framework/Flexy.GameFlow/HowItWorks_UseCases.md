@@ -38,8 +38,14 @@ Typical usage is RootLibrary, CommonLibrary and one library for each GameStage B
 This is for simplicity of project organization
 
 ### Game Stage
-Represents big states of a game like Boot, Meta, Core, etc.  
-They always spawned as children of Graph Root and by default live as root GameObjects of DontDestroyOnLoad scene
+Represents big states of a game like Boot, Meta, Core, etc.
+
+Meant to be All In One solution for big Stages like BattleStage
+enter battle with ```await Game.Flow.OpenBattle(map, mode)```,  
+when battle ends just ```CloseAndDestroy()``` and everything that was part of battle (states, resources, scenes) unloaded and battle result returned
+what to play next battle? just open new one! It is that simple as it must be :)  
+  
+GameStage always spawned as children of Graph Root and by default live as root GameObjects of DontDestroyOnLoad scene
 Also every GameStage has its own GameContext
 Regular States spawned on different Stage layers by default Base layer sometimes popups layer or any other layer you create        
 By default there is one Active State on each layer but this is up to TransitionRoot to decide
