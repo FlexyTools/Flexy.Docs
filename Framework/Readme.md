@@ -17,5 +17,16 @@ If you want to alter package, but it is readonly, embed it manually (by copying 
 | [Flexy.UI](Flexy.UI/Readme.md) <br/> Lite / Pro               | Universal Hierarchical stater machine that will manage your game states and transitions in so simple way you never seen before | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) <br/> Github: [Light](https://github.com/FlexyTools/Flexy.UI-Light) / [Pro](https://github.com/FlexyTools/Flexy.UI)             |
 | [Flexy.GameSettings](Flexy.GameSettings/Readme.md) <br/> Free | Easily store game settings for settings window or any other needs with just one line per setting                               | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) <br/> [Github](https://github.com/FlexyTools/Flexy.GameSettings)                                                                |
 
+## Meta
+| Package               | Description              | Links |  
+|-----------------------|--------------------------|-------|
+| Under Construction... | Ready to go Meta screens |       |
+
+
+## Core
+| Package               | Description             | Links |  
+|-----------------------|-------------------------|-------|
+| Under Construction... | Ready to play Core ToYs |       |
+
 
 [Flexy.Tools](Readme.md) / Framework
