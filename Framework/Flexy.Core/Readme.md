@@ -1,4 +1,5 @@
-﻿![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
+﻿![Cover](Src/Cover.webp)
+
 [Docs and Use Cases](Documentation.md)
 | [FAQ](FAQ.md)
 

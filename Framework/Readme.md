@@ -1,9 +1,11 @@
-![Img](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
+![Img](Cover.webp)
 
 # Flexy Framework
 [Flexy.Tools](Readme.md) / Framework
 
-Documentation of all Flexy.Framework packages: Base, Meta, Core, QoL and others
+**Modular framework built from independent Bricks and providing flexyble foundation for game creation, tooling, testing and gameplay systems**  
+
+Here is documentation of all Flexy.Framework packages: Base, Meta, Core, QoL and others
 
 All packages created as UPM packages so you can easily install them from PackageManager by address   
 If you want to alter package, but it is readonly, embed it manually (by copying from Library/PackageCache to Packages) or use dedicated button in package manager 

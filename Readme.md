@@ -1,4 +1,4 @@
-![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
+![Img](Cover.webp)
 
 # Flexy.Tools
 
@@ -9,7 +9,7 @@
 Documentation and issue tracker for all Flexy packages and Templates
 
 
-## Flexy Framework
+## Flexy Tools
 
 It is complete system for creating games:  
 - Starting from architecture principles and patterns for games **Flexy.Bricks\ToYs**  
