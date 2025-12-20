@@ -16,6 +16,7 @@ It is complete system for creating games:
 - Going through **Packages** that implement necessary building **Bricks / ToYs**
 - And to the Ready to Use or learn from **Game Templates**   
 
+<br/>
 
 ## [Flexy.Bricks\ToYs](Flexy.Bricks-ToYs/Readme.md)
 
@@ -31,7 +32,3 @@ This is the foundation that creates stable ecosystem so you can concentrate on c
 
 This is ready to use Full Project that reflects Flexy Framework principles and becomes a good foundation for new projects and learning 
 
-
-# QoL Tools
-
-under construction...
