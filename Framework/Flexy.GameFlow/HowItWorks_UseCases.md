@@ -1,4 +1,6 @@
-﻿# How It Works & Use Cases
+﻿![Img](Src/Cover.webp)
+
+# How It Works & Use Cases
 
 [Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.GameFlow](Readme.md) / How It Works & Use Cases
 
