@@ -1,9 +1,11 @@
-![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
+![Img](Cover.webp)
 
 # Flexy Game Templates
-[Home](Readme.md)
+[Flexy.Tools](../Readme.md) / Flexy.GameTemplates
 
-List of all Flexy Game Templates 
+Templates build to showcase Flexy.Framework packages
+Recomended Flexy Project clean asset and code structure
+and be good start point for various game genres
 
 ## Free
 
@@ -17,3 +19,8 @@ List of all Flexy Game Templates
 ## Premium
 
 under construction... 
+
+
+<br/>
+
+[Flexy.Tools](../Readme.md) / Flexy.GameTemplates
