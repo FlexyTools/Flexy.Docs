@@ -1,8 +1,9 @@
 ﻿![Img](https://github.com/user-attachments/assets/ebb66e52-7b73-46fd-95ab-3585a9a1180e)
 
-# Flexy.GameSettings
-
 [Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameSettings
+
+
+# Flexy.GameSettings
 
 <!--
 [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)

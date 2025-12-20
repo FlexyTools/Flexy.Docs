@@ -1,7 +1,9 @@
 ![Img](Cover.webp)
 
-# Flexy Framework
 [Flexy.Tools](../Readme.md) / Framework
+
+
+# Flexy Framework
 
 **Modular framework built from independent Bricks and providing flexyble foundation for game creation, tooling, testing and gameplay systems**  
 
@@ -30,5 +32,6 @@ If you want to alter package, but it is readonly, embed it manually (by copying 
 |-----------------------|-------------------------|-------|
 | Under Construction... | Ready to play Core ToYs |       |
 
+<br/>
 
 [Flexy.Tools](../Readme.md) / Framework

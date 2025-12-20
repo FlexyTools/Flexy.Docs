@@ -1,10 +1,11 @@
 ![Img](Cover.webp)
 
-# Flexy.Tools
-
 [Flexy.Fun](https://flexy.fun)
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
 | [Asset Store](https://assetstore.unity.com/publishers/113112)
+
+
+# Flexy.Tools
 
 Documentation and issue tracker for all Flexy packages and Templates
 
@@ -22,11 +23,13 @@ It is complete system for creating games:
 
 Flexy.Bricks\ToYs is set of Architecture principles and patterns principles collected and created by me JesOb for building games
 
+<br/>
 
 ## [Flexy.Framework](Framework/Readme.md)
 
 This is the foundation that creates stable ecosystem so you can concentrate on creating games itself
 
+<br/>
 
 ## [Flexy.GameTemplates](GameTemplates/Readme.md)
 

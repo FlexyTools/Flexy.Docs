@@ -2,17 +2,21 @@
 
 [Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameFlow
 
-# Flexy.GameFlow
 
+# Flexy.GameFlow
 
 Universal, hierarchical, dynamic state machine that will manage your  
 game states, scenes and transitions as <b>simply and extensibly</b> as  
 <b>you have never</b> seen before
 
-[Start Guide](StartGuide.md) |
-[How It Works & Use Cases](HowItWorks_UseCases.md) |
-[Scripting Api](ScriptingApi/Readme.md) |
-[Showcase(Template project)](../../GameTemplates/Barley-Breaks/Readme.md)
+[Github](https://github.com/FlexyTools/Flexy.GameFlow)
+<!-- | [Unity Forum](https://discussions.unity.com/t/a/1700923)
+| [AssetStore](https://u3d.as/3LKx) -->  
+[Start Guide](StartGuide.md)
+| [How It Works & Use Cases](HowItWorks_UseCases.md)
+| [Scripting Api](ScriptingApi/Readme.md)
+| [Showcase(Template project)](../../GameTemplates/Barley-Breaks/Readme.md)
+
 
 ## Preface
 
@@ -83,5 +87,7 @@ drastically simplifying management complexity:
 - C# 10
 - Native C# Nullability annotations
 - Fast Enter Play Mode support
+
+<br/>
 
 [Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameFlow

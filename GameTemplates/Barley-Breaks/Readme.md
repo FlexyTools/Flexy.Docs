@@ -2,6 +2,7 @@
 
 [Flexy.Tools](../../Readme.md) / [GameTemplates](../Readme.md) / Barley-Breaks
 
+
 # FlexyTT: Barley-Break
 
 Simple Barley-Break Game with leaderboard and few field sizes  
@@ -21,5 +22,7 @@ Also every FlexyTT show you how to structure project and code to keep it clean, 
 ### Structure:
 - [Project structure and Assets](ProjectStructureAndAssets.md)
 - [Code Structure and Flexy Project Template](CodeStructureAndFlexyProjectTemplate.md) 
+
+<br/>
 
 [Flexy.Tools](../../Readme.md) / [GameTemplates](../Readme.md) / Barley-Breaks

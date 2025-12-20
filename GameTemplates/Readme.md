@@ -1,7 +1,9 @@
 ![Img](Cover.webp)
 
-# Flexy Game Templates
 [Flexy.Tools](../Readme.md) / Flexy.GameTemplates
+
+
+# Flexy Game Templates
 
 Templates build to showcase Flexy.Framework packages  
 Recomended Flexy Project clean asset and code structure  

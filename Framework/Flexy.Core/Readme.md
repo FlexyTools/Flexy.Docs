@@ -1,18 +1,24 @@
 ﻿![Cover](Src/Cover.webp)
 
-[Docs and Use Cases](Documentation.md)
-| [FAQ](FAQ.md)
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameFlow
 
-<!-- 
-| [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) 
-| [Asset Store](https://u3d.as/3u78)
--->
-# **Flexy.Core**
+
+# Flexy.Core
 
 Core package of **Flexy Framework** that every other package depends on  
 
+[Github](https://github.com/FlexyTools/Flexy.Core)
+<!--| [Unity Forum](https://discussions.unity.com/t/flexy-gamesettings-free-easily-store-game-settings-with-just-one-line-per-setting/1700923)
+| [AssetStore](https://u3d.as/3LKx)  
+[Scripting Api](ScriptingApi/Readme.md)
+| [Showcase(Template project)](../../GameTemplates/Barley-Breaks/Readme.md) -->
 
 ## **Content**
+
+
+### [GameContext](GameContext.md)
+Flexy way to think about game dependencies and their composition. **Context based**  
+You can think like DI Container but more clear and tied to scenes and GameObjects instead of live in thin air
 
 ### [Bindings](Bindings.md)
 Core of Flexy.Binding system  
@@ -26,9 +32,6 @@ play sfx, show vfx, play animation, enable object, change color... actually any 
 ### [Common Utilities](CommonUtilities.md)
 Small set of very often and common used utilities
 
-### [GameContext](GameContext.md)
-Flexy way to think about game dependencies and their composition. **Context based**
-
 
 ## **Key Strengths**
 
@@ -38,21 +41,10 @@ Flexy way to think about game dependencies and their composition. **Context base
   - GameContext have customization points
 - Production-Proven: used in released games since 2019
 
-See [Docs and Use Cases](Documentation.md) for usage samples   
-
 
 ## **Technical details**
 
-- Ref is struct with 2 fields: Hash128 & Int64
-- C# Extensions based load methods
-- AssetLoader interface is 5 virtual methods
-- Sync loading 
-- UniTask based async loading 
+- UniTask based async init 
 - Native C# Nullability annotations
 - C# 10
 - Fast Enter Play Mode support
-
-
-This package uses cropped version of UniTask package under MIT License  
-See [Third-Party Notices.md](ThirdPartyNotices.md) file in package for details  
-Full and latest version can be installed alongside this package without issues  
