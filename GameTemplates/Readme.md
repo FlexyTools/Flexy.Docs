@@ -3,8 +3,8 @@
 # Flexy Game Templates
 [Flexy.Tools](../Readme.md) / Flexy.GameTemplates
 
-Templates build to showcase Flexy.Framework packages
-Recomended Flexy Project clean asset and code structure
+Templates build to showcase Flexy.Framework packages  
+Recomended Flexy Project clean asset and code structure  
 and be good start point for various game genres
 
 ## Free

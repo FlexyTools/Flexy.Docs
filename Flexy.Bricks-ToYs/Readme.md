@@ -1,4 +1,4 @@
-![Image Sequence_038_0002](https://raw.githubusercontent.com/FlexyTools/.github/refs/heads/main/profile/banner.png)
+![Img](Cover.webp)
 
 # Flexy.Bricks\ToYs
   
@@ -6,9 +6,10 @@
 | [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
 | [Asset Store](https://assetstore.unity.com/publishers/113112)
 
-Flexy.Bricks\ToYs is set of Architecture principles and patterns collected and created by me **JesOb** for building games.  
+Flexy.Bricks\ToYs is set of Architecture principles and patterns collected and created by me **JesOb** for building games  
 
-Over almost 20 years of experience I have learned a lot about game development, filter and slightly change meaning of tools that actually works for it  
+Over almost 20 years of experience I have learned a lot about game development,  
+filter and slightly change meaning of tools that actually works for it  
 With those you can create modular, testable and fault-tolerant bricks(modules), ToYs and compose games from them  
 
 ### Brick\ToY Building Principles
