@@ -4,12 +4,12 @@
 
 # Scripting Api
 
-| Class                                      | Description                                                                                                      |  
-|:-------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [Game Context](GameContext.md)             | Flexy way to think about game dependencies and their composition. **Context based**                              |  
-| [Flexy Action](FlexyAction.md)             | Entry point into GameFlow                                                                                        |
-| [Bindable Behaviour](BindableBehaviour.md) | Optional base class to know who was bound and call rebind requests back to them                                  |
-| [Bindable Behaviour](BindableBehaviour.md) | Optional base class to know who was bound and call rebind requests back to them                                  |
+| Class                                      | Description                                                                         |  
+|:-------------------------------------------|:------------------------------------------------------------------------------------|
+| [Game Context](GameContext.md)             | Flexy way to think about game dependencies and their composition. **Context based** |  
+| [Flexy Action](FlexyAction.md)             | Entry point into GameFlow                                                           |
+| [Bindable Behaviour](BindableBehaviour.md) | Optional base class to know who was bound and call rebind requests back to them     |
+| [Binder](Binder.md)                        | Abstract class to implement Binders                                                 |
 
 
 <br/>
