@@ -49,7 +49,7 @@ drastically simplifying management complexity:
 - **Easy to clean up**
 
 
-## Key Strengths~~~~
+## Key Strengths
 
 - Lite version is Free :)
 - Mature: First version was born in 2012

@@ -1,11 +1,12 @@
-# **Flexy.Core Actions**
+![Img](ScriptingApi/Src/FlexyAction.webp)
 
-[Home](Readme.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.Core](Readme.md) / Flexy Action
 
+# Flexy Action
 
-**Flexy Actions** is universal and composable system to do action in response to event.  
+**Flexy Action** is universal and composable system to do action in response to event.  
 Fo example, play sfx, show vfx, play animation, enable object, change color... actually any action.  
-Developer define simple actions and then can compose any chains from them to define simple or complex reactions to events.   
+You define simple actions and then can compose any chains from them to define simple or complex reactions to events.   
 
 ```csharp
 [SerializeField] FlexyEvent _jump;
@@ -13,7 +14,9 @@ Developer define simple actions and then can compose any chains from them to def
 
 Then set any actions to it in inspector or subscribe to Raised event from code
 
-Serve as glue for many packages in **Flexy Framework**
+Serve as glue for many packages in **Flexy Framework**  
+Define many events in code, create Good Action set specific to your game and  
+allow Game and Level Designers to create **magic** from it 
 
 ### Available actions in core package
 
@@ -26,11 +29,13 @@ Serve as glue for many packages in **Flexy Framework**
 
 Also, those actions serve as samples for implementing actions specific for your game 
 
-### Default Events
+### Ready to use Event Boxes
 
 **EventBox_FixedUpdate** - Component that raise event every fixed update  
 **EventBox_Update** - Component that raise event every update  
 **EventBox_LateUpdate** - Component that raise event every late update  
 **EventBox_Lifecycle** - Component that raise events on default unity callbacks Awake, Start, OnEnable, OnDisable, OnDestroy  
 
-[Home](Readme.md) | [Bindings](Bindings.md) | [Game Contexts](GameContexts.md) | [Common Utilities](CommonUtilities.md)
+<br/>
+
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.Core](Readme.md) / Flexy Action

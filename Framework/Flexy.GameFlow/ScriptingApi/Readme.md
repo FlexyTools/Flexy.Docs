@@ -1,8 +1,6 @@
-# Scripting Api
-
 [Flexy.Tools](../Readme.md) / [Flexy.GameFlow](../Readme.md) / ScriptingApi
 
-
+# Scripting Api
 
 | Class                                          | Description                                                                                                         |  
 |:-----------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
@@ -17,5 +15,6 @@
 | [Flow Graph](FlowGraph.md)                     | Stores state graph starting from root FlowNode and allows to manipulate it                                          |
 | [Flow Node](FlowNode.md)                       | It is building block of FlowGraph                                                                                   |
 
+<br/>
 
 [Flexy.Tools](../Readme.md) / [Flexy.GameFlow](../Readme.md) / ScriptingApi

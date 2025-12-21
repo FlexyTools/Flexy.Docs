@@ -16,11 +16,11 @@ Core package of **Flexy Framework** that every other package depends on
 ## **Content**
 
 
-### [GameContext](GameContext.md)
+### [GameContext](GameContexts.md)
 Flexy way to think about game dependencies and their composition. **Context based**  
-You can think like DI Container but more clear and tied to scenes and GameObjects instead of live in thin air
+You can think like DI Container but more clear and tied to scenes and GameObjects so you can get GameCOntext from every GO or scene
 
-### [Bindings](Bindings.md)
+### [Binders](Binders.md)
 Core of Flexy.Binding system  
 This is one of basis parts of **Flexy.Bricks** **MC-VMV** pattern for binding View to ViewModel   
 It is here because it can be used not only in UI but in coregame too
