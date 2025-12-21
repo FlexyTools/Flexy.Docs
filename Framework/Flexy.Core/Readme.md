@@ -7,7 +7,7 @@
 
 Core package of **Flexy Framework** that every other package depends on  
 
-[Github](https://github.com/FlexyTools/Flexy.Core)
+[Github](https://github.com/FlexyTools/Flexy.Core) | [Scripting Api](ScriptingApi/Readme.md)
 <!--| [Unity Forum](https://discussions.unity.com/t/flexy-gamesettings-free-easily-store-game-settings-with-just-one-line-per-setting/1700923)
 | [AssetStore](https://u3d.as/3LKx)  
 [Scripting Api](ScriptingApi/Readme.md)
