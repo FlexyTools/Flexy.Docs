@@ -6,8 +6,11 @@
 # Flexy.Core
 
 Core package of **Flexy Framework** that every other package depends on  
+It is Glue of Flexy.Framework and based on [Flexy.Briks\ToYs](../../Flexy.Bricks-ToYs/Readme.md) architecture
 
-[Github](https://github.com/FlexyTools/Flexy.Core) | [Scripting Api](ScriptingApi/Readme.md)
+[Github](https://github.com/FlexyTools/Flexy.Core)
+| [Unity Forum](https://discussions.unity.com/t/a/1701330)
+| [Scripting Api](ScriptingApi/Readme.md)
 <!--| [Unity Forum](https://discussions.unity.com/t/flexy-gamesettings-free-easily-store-game-settings-with-just-one-line-per-setting/1700923)
 | [AssetStore](https://u3d.as/3LKx)  
 [Scripting Api](ScriptingApi/Readme.md)
@@ -18,7 +21,7 @@ Core package of **Flexy Framework** that every other package depends on
 
 ### [GameContext](GameContexts.md)
 Flexy way to think about game dependencies and their composition. **Context based**  
-You can think like DI Container but more clear and tied to scenes and GameObjects so you can get GameCOntext from every GO or scene
+You can think like DI Container but more clear and tied to scenes and GameObjects so you can get GameContext from every GO or scene
 
 ### [Binders](Binders.md)
 Core of Flexy.Binding system  
