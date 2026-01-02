@@ -8,7 +8,8 @@
 **Object.IsAlive()** - Check object alive in better way than cast to bool  
 **Object.Destroy()** - Call destroy as member function  
 
-**GameObject.ClearDirty()** - Helper for Prefab deactivating and spawning deactivated then clear dirty on prefab
+**GameObject.ClearDirty()** - Helper for Prefab deactivating and spawning deactivated then clear dirty on prefab  
+**MonoBeh < T > .InstantiateInactive()** - Instantiate prefab in inactive state so you can setup it before activating
 
 ## Services
 
@@ -26,6 +27,14 @@
 **RuntimeInspector** - draw object runtime state in inspector by decorating method with attribute  
 **SpanList, TempList** - temp lists for temporary collection in algorithms without GC allocation  
 
+**[Static(Clear)]** - Attribute to execute Method for clearing static fields on application start or enter play mode  
+**[Static(Init)]** - Attribute to execute Method for for initializing static fields on application start or enter play mode   
+
+To use this short form you need to add this to one file in this asmdef: 
+```csharp
+global using StaticAttribute = UnityEngine.RuntimeInitializeOnLoadMethodAttribute;
+global using static Flexy.Core.RuntimeInit;
+```
 
 <br/>
 

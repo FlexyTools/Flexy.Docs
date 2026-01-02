@@ -1,18 +1,25 @@
-﻿![Image Sequence_038_0002](https://github.com/user-attachments/assets/792efb83-33db-4c8c-8e92-2c8e5a363522)
-[StartGuide](StartGuide.md)
-| [FAQ](FAQ.md)
-| [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799) 
-| [Asset Store](https://u3d.as/3u78)
+﻿![Cover](Src/Cover.webp)
 
-**Flexy.AssetRefs**
-===================
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.AssetRefs
+
+# Flexy.AssetRefs
 
 Load assets **on demand** without Addressables and Bundles  
 Almost **zero** editor setup!  
-Fast, extendable, production-proven and **Open Source!**
+Fast, extendable, production-proven and **Open Source!**  
 
-**Want to load assets ondemand but**
------------------------
+[StartGuide](StartGuide.md)
+| [Extension Points](ExtensionPoints.md)
+| [Pipeline](Pipeline.md)
+| [FAQ](FAQ.md)
+
+[Github](https://github.com/FlexyTools/Flexy.AssetRefs)
+| [Unity Forum](https://discussions.unity.com/t/flexy-assetrefs-v5-0-0-released/1605799)
+| [Asset Store](https://u3d.as/3u78)
+
+
+## Want to load assets ondemand but
+
 - don't want to mess around with Addressables
 - don't want to use any type of Bundles
 - don't want to manage addressable assets separately
@@ -30,8 +37,9 @@ Designed for flexibility, Flexy.AssetRefs is easy to use from the prototyping st
 It is well-suited for small projects where Addressables can create more issues than they solve and easily expand to 
 more complex systems later.
 
-**Key Strengths**
-------------------
+
+## Key Strengths
+
 - It is Open Source :)
 - It is Universal
 - Fast: pure struct based 
@@ -53,8 +61,8 @@ more complex systems later.
 See [StartGuide](StartGuide.md) for usage samples   
 
 
-**Flexy.AssetRefs is**
------------------------
+## Flexy.AssetRefs is
+
 **Modular and Simple to use:** we separate the reference system from complex asset bundles bundling and downloading. 
 Flexy.AssetRefs focuses only on asset references for on-demand loading. Flexy.Bundles adds bundles building 
 and downloading capabilities. This modular approach avoids the complexity of a heavy solution like Addressables
@@ -69,8 +77,8 @@ and can be replaced with your own implementation. It is only 5 virtual methods t
 **In production on platforms:** iOS, Android, Windows, Linux, Mac
 
 
-**Technical details**
----------------------
+## Technical details
+
 - Ref is struct with 2 fields: Hash128 & Int64
 - C# Extensions based load methods
 - AssetLoader interface is 5 virtual methods
@@ -84,3 +92,7 @@ and can be replaced with your own implementation. It is only 5 virtual methods t
 This package uses cropped version of UniTask package under MIT License  
 See [Third-Party Notices.md](ThirdPartyNotices.md) file in package for details  
 Full and latest version can be installed alongside this package without issues  
+
+<br/>
+
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.AssetRefs

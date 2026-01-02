@@ -31,38 +31,22 @@ private async UniTask LoadSceneAsync ( )
   
 Default implementation directly uses AssetLoader Api to load assets  
 
-## AssetLoader
+## AssetLoader / SceneLoader
 
-**AssetLoader** is class responsible for loading assets/scenes in Editor / PlayMode / Build  
-In Editor AssetLoader loads assets using AssetDatabase  
-In PlayMode with RuntimeBehavior enabled or in Build it uses runtime implementation that you **can override!**  
-To enable RuntimeBehavior go **Tools/Flexy/AssetRefs/AssetLoader/Enable Runtime Behavior** 
+**AssetLoader and SceneLoader** is classes responsible for loading assets/scenes in Editor / PlayMode / Build  
+In Editor they load assets using AssetDatabase  
+In PlayMode with RuntimeBehavior enabled or in Build using runtime implementation that you **can override!**  
+To enable RuntimeBehavior go **Tools/Flexy/AssetRefs/Enable Runtime Behavior** 
 
-**Default** AssetLoader is AssetLoader_Resources that loads Assets using Resources Api  
-But you **do not** need to place your assets into Resources folder! Thanks to [**Pipeline**](Pipeline.md)  
+**Default** AssetLoader/SceneLoader is AssetLoader_Resources and SceneLoader_Resources. They load using Resources Api  
+But you **do not** need to place your assets into Resources folder or add Scenes to BuildSettings! Thanks to [**Pipeline**](Pipeline.md)  
 
 ## One more thing
 
-Async methods of asset loader return specific Task structure that have few useful properties
+Async methods of SceneLoader return specific Task class that have few useful properties
 
 ```csharp
-var loadBossTask = _bossPrefab.LoadAssetAsync();
-
-// You can access loading progress, check IsDone and IsSuccess
-while (!loadBossTask.IsDone)
-{
-    progressLabel.text = loadBossTask.Progress.ToString();
-    await UniTask.NextFrame();
-}
-
-if (loadBossTask.IsSuccess)
-    SpawnBoss( loadBossTask.GetResult() );
-```
-
-Same with Scene Loading but scene specific
-
-```csharp
-var loadBossRoomTask = _bossRoom.LoadSceneAsync(this.gameObject, new LoadSceneTask.Parameters { ActivateOnLoad = false });
+var loadBossRoomTask = _bossRoom.LoadSceneAsync(this.gameObject, new LoadSceneTask.Parameters { AllowActivation = false });
 
 // You can access loading progress, check IsDone, get scene struct, WaitForSceneLoadStart and AllowSceneActivation
 
@@ -70,6 +54,15 @@ await loadBossRoomTask.WaitForSceneLoadStart();
 
 // after scene started loading scene struct is available and we can use any scene related api before scne loading finishes
 var scene = loadBossRoomTask.Scene;
+
+// Also you can add LoadSteps to so some sort of initilisation after scene loading
+
+loadBossRoomTask.AddLoadStep(async (task) =>
+{
+    await UniTask.Delay(100);
+	// do some initilisation here may be generate dynamic scene content, bake meshes or imposters etc.
+});
+// All steps happens before LoadTask return Done
 
 while (!loadBossRoomTask.IsDone)
 {
@@ -86,7 +79,16 @@ await loadBossTask; // wait for activation
 // Scene fully loaded and activated
 ```
 
-**Warning**  
-You can not **store** LoadTasks! They rented from pool and will be returned to pool after 10 frames once loading done 
+ You can add LoadSteps globally to not add on call side every time
+```csharp
+LoadSceneTask.NewLoadSceneTaskStarted += (task) =>
+{
+    task.AddLoadStep(async (task) =>
+    {
+        await UniTask.Delay(100);
+        // do some initilisation here may be generate dynamic scene content, bake meshes or imposters etc.
+    }
+}
+```
 
 [Index](Readme.md) | [Start Guide](StartGuide.md) | [Pipeline](Pipeline.md) | [FAQ](FAQ.md)

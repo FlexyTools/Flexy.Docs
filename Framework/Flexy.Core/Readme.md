@@ -1,6 +1,6 @@
 ﻿![Cover](Src/Cover.webp)
 
-[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.GameFlow
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.Core
 
 
 # Flexy.Core
@@ -51,3 +51,8 @@ Small set of very often and common used utilities
 - Native C# Nullability annotations
 - C# 10
 - Fast Enter Play Mode support
+
+
+<br/>
+
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.Core
