@@ -1,4 +1,4 @@
-﻿![Img](Src/Cover.webp)
+﻿![Img](Src/Structure.webp)
 
 # How It Works & Use Cases
 
@@ -6,8 +6,10 @@
 
 ## Main Idea
 
-Game is set of states that transition to each other  
-Every state has some visual representation like UIWindow or PlayState  
+Game is hierarchical set of states that transition to each other  
+Common Hierarchy is Root -> GameStage -> State -> SubState
+Some state place their substates on different layers like overlay layer or Popups layer     
+Every state has some visual representation and logic like UIWindow or PlayState or CutsceneState  
 
 Because of this GameFlow looks like a UI thing, but it is not   
 It is more fundamental, but you will build UI on top of it  
@@ -17,9 +19,10 @@ That something is HUD and it is main PlayState of a game
 When that something changes, it means the game switches to a new state (in gamer mind), regardless of how it works under the hood   
 
 Any new state of Game will show new visual representation for gamer so he knows what happens, Cutscene started, Player was killed, Bossfight started, NPC dialog, entered Freecam mode  
-All they not only change game visual representation, but also how gamer interact with it, controls changed, camera changed, etc.  
+They all affect not just the visuals, but also how the player interacts with the game, controls changed, camera changed, etc.  
 So it is truly different state of a game   
-State not only represent new State of a game but actually controls the game in current state and decide when it is ready to switch to another one 
+State not only represent new State of a game but actually controls the game in current state and decide when it is ready to switch to another one  
+Big states - GameStages also most of the time control scene loading/unloading Boot state loaded from BootScene (first scene of a game), Stage Meta loads MetaScene (Lobby Scene), StageCore loads and unloads playable game maps   
 
 **Flexy.GameFlow** make those states and transition obvious in code too and easy to work with, develop and test
 
