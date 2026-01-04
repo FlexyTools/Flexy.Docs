@@ -151,7 +151,9 @@ This asset may not be a good fit if:
 - You prefer ad-hoc managers and scene-based logic
 
 
-### Why not a classic FSM?
+## Flexy Game.Flow vs Other Solutions 
+
+<details><summary> Why not a classic FSM?</summary>
 
 Classic FSMs work well for isolated systems like AI or animation,
 but they do not scale to managing the entire game flow
@@ -161,8 +163,10 @@ They break down when:
 - States need hierarchy and parallel layers
 - Transitions depend on context or async logic
 
+<br></details>
 
-### Why Not Scene Managers?
+<details><summary> Why Not Scene Managers?</summary>
+
 Scene managers focus on scenes as the primary unit of control
 This works early — but breaks down as projects grow
 
@@ -181,8 +185,9 @@ Flexy.GameFlow takes the opposite approach
 You do not manage scenes  
 You orchestrate game behavior — scenes simply follow
 
+<br></details>
 
-### Why not custom state management?
+<details><summary> Why not custom state management? </summary>
 
 Custom solutions usually:
 - Start simple and rot over time
@@ -196,6 +201,7 @@ Flexy.GameFlow gives you:
 - The freedom to extend, override, or replace parts as your project evolves
 - You get structure without rigidity.
 
+<br></details>
 
 ### Why Flexy.GameFlow specifically?
 
@@ -205,34 +211,42 @@ Flexy.GameFlow gives you:
 - Free Lite version to validate the approach before committing
 
 
-### GameFlow Pro Features
-- Robust: even more control and dynamic behaviour on enter play mode
-- Extensible: Various logical Open/Close callbacks to override or subscribe
-- Layers support: place substates on different layers in state e.g. popups layer 
-- Flexy transitions: Fully customizable, UniTask based logic of state transition behavior
-- Precise: await for exact moment where logical event is raised
-- Async preload: preload state views for instant transitions later (no load spikes)
-- Split screen ready: separate BigStage for each screen
-
-
 [Start Guide](StartGuide.md) | [How It Works & Use Cases](HowItWorks_UseCases.md) | [Scripting Api](ScriptingApi/Readme.md) | [Showcase(Template project)](../GameTemplates.md)
 
-<details>
-  <summary>Click to expand!</summary>
-
-This content is hidden until you click the summary.
-You can even include:
-- Lists
-- Code blocks
-- Or images here.
-
-</details>
 
 ## Technical details
 
 - C# 10
 - Native C# Nullability annotations
 - Domain Reload disabled friendly
+	
+### Features 
+
+- Universal: One component `State` for any state (Big, small, sub, UI, Play...)
+- Extensible: Various virtual methods Show/Hide BackShow/ForwardHide to override
+- Simple To Use: Once setup you care only about **one** class `State` 99% of time
+- Easy launch: Enter play mode from any scene
+- Launch from state: No need to launch entire game and go deep to your UI or Play State to test, debug or develop
+- Easy cleanup: Close and destory cleanup flow
+- Easy data exchange: Pass data to state and back with one line of code
+- Await Result: await for state result like popup answer or StatePlay results
+- Scene Friendly: States is responsible to load scenes. So you can load any scene from any state
+- Easy bootstrap: simple and short bootstrap script that use only public Api, so you can write your own
+- GameContext based: every big state have it own Flexy.GameContext by design
+- TDD-Friendly: Start from any scene and support of disabled domain reload
+- Separated View: Have 2 layers of operation Logical and View
+- Network ready: good fit for network state transitions
+- Robust: Correct State hierarchy populates upon entering play mode for each scene
+
+
+### GameFlow Pro Features
+- Robust: even more control and dynamic behaviour on enter play mode
+- Extensible: Various logical Open/Close callbacks to override or subscribe
+- Layers support: place substates on different layers in state e.g. popups layer
+- Flexy transitions: Fully customizable, UniTask based logic of state transition behavior
+- Precise: await for exact moment where logical event is raised
+- Async preload: preload state views for instant transitions later (no load spikes)
+- Split screen ready: separate BigStage for each screen
 
 <br/>
 
