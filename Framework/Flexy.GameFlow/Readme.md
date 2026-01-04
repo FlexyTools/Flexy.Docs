@@ -33,9 +33,9 @@ So you can change and extend game flow safely, even late in development
 - Adding a new game state creates dependency hell and unexpected side effects
 
 **Scalability**
-- Complex transition sequences are hard to build and reason about
 - Adding new game states becomes harder as the project grows
 - Custom flow solutions break when requirements change
+- Complex transition sequences are hard to build and reason about
 
 **Development workflow**
 - Testing a specific state requires running the whole game
@@ -56,16 +56,18 @@ So you can change and extend game flow safely, even late in development
 
 ## Preface
 
-Any Game is set of Game States that transition into each other  
-Big Stages like Boot, Lobby(Metagame), Battle(Coregame)  
-And their states like main menu, settings, loading, play state, pause state, cutscene, win\loose screen etc
+Any game is a set of game states that transition into each other.  
+Big stages like Boot, Lobby (Metagame), and Battle (Coregame),  
+and their states like main menu, settings, loading, play, pause, cutscene, win/lose screens
 
 Hierarchical game state management is a fundamental part of every game  
-Flexy.GameFlow is a **Game State manager**, not a UI manager
-Most states require some form of UI for player interaction, how it is implemented is the developer’s responsibility
+Flexy.GameFlow is a **game state manager**, not a UI manager
+
+Most states require some form of UI for player interaction  
+How this UI is implemented is the developer’s responsibility
 
 Flexy.GameFlow is intentionally agnostic to rendering, UI frameworks, and networking solutions  
-Support singleplayer, multiplayer, coop, and split-screen projects without structural changes
+It supports singleplayer, multiplayer, coop, and split-screen projects without structural changes
 
 
 ## Advanced Capabilities
@@ -89,9 +91,9 @@ Support singleplayer, multiplayer, coop, and split-screen projects without struc
 ### Scene & Navigation
 
 - State-driven scene loading and unloading
-- CrossSceneRef for portals, transitions, and any other demands
+- CrossSceneRef for portals, transitions, and similar cases
 - Support for multi-scene maps with portals
-- No manual scene management in Build Settings (thanks to AssetRefs.Pileines)
+- No manual scene management in Build Settings (thanks to AssetRefs.Pipelines)
 
 
 ## Who this is for
@@ -141,8 +143,8 @@ Flexy.GameFlow takes the opposite approach
 - Gameplay states, overlays, and popups use the same state model
 - Flow is explicit, awaitable, and testable in isolation
 
-You do not manage scenes  
-You orchestrate game behavior — scenes simply follow
+**You do not manage scenes**  
+**You orchestrate game behavior — scenes simply follow**
 
 <br></details>
 
@@ -175,31 +177,46 @@ Flexy.GameFlow gives you:
 ## Technical details
 
 - C# 10
-- Native C# Nullability annotations
-- Domain Reload disabled friendly
-	
-### Features 
+- Native C# nullability annotations
+- Domain Reload–disabled friendly
 
-- Universal: One component `State` for any state (Big, small, sub, UI, Play...)
-- Extensible: Various virtual Show/Hide BackShow/ForwardHide methods to override
-- Simple To Use: Once setup you care only about **one** class `State` 99% of time
-- Robust: Correct State hierarchy populates upon entering play mode for any scene
-- Play any Scene and State: Botstrapper Prefab will setup correct GameFlow hierarchy on #Frame 0  
-- Easy cleanup: Stage.CloseAndDestory will correctly close stage and cleanup resources, scenes 
-- Easy data exchange: Pass data to state and back with one line of code
-- Await Result: await for state result like popup answer or StatePlay results
-- TDD-Friendly: Start from any scene, state, and TestCase of State 
-- Network ready: good fit for network state transitions
+
+### Features
+
+- Universal: single `State` base class for all state types (gameplay, UI, substates)
+- Extensible: virtual Show/Hide and BackShow/ForwardHide methods to override
+- Robust bootstrap: correct state hierarchy initializes for any scene
+- Early initialization: play any scene or state directly with automatic GameFlow setup before the first frame
+- Easy cleanup: explicit `Stage.CloseAndDestroy` flow with proper cleanup of states, resources, and scenes
+- Simple data exchange: pass data into a state and receive results back
+- Awaitable results: await state results (e.g. popup answers, gameplay outcomes)
+- TDD-friendly: start from any scene, state, or state test case
+- Network-ready: tested in networked game projects
+
+
+### Core Architecture & Runtime
+
+- GameFlow bootstrap prefab/script to initialize the entire flow system
+- Central `ServiceGameFlow` entry point for controlling game flow from code
+- Explicit `GameStage` abstraction for major phases (Boot, Meta, Core)
+- `FlowLibrary` for centralized registration and lookup of all game states
+- Graph-based game flow model via `FlowGraph` and `FlowNode`
+- Runtime tracking of current and active state nodes
+- Explicit `TransitionOperation` struct for safe and predictable transitions
+- `Opener` interface to decouple state creation from activation logic
 
 
 ### GameFlow Pro Features
-- Robust: even more control and dynamic behaviour on enter play mode
-- Extensible: Various virtual Open/Close Forward/Back methods to override
-- Layers support: place substates on different layers in state e.g. popups layer
-- Flexy transitions: Fully customizable, UniTask based logic of state transition behavior
-- Precise: await for exact moment where logical event is raised before any view change can happen
-- Async preload: preload state views for instant transitions later (no load spikes)
-- Split screen ready: separate BigStage for each screen
+
+- Extended control over Play Mode initialization
+- Additional virtual Open/Close and Forward/Back lifecycle methods
+- Layered substates support (e.g. popup layers)
+- Fully customizable UniTask-based transition logic
+- Precise control over logical events before any view changes
+- Async preload of state views to avoid load spikes
+- Split-screen support with a separate `BigStage` per screen
+
+
 
 <br/>
 
