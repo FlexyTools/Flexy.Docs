@@ -7,7 +7,7 @@
 
 
 Stop fighting menus, meta, gameplay, and scenes  
-A hierarchical game state architecture for managing states and scenes  
+A hierarchical game state architecture for managing game states and scenes  
 Clean and testable from prototype to production
 
 
@@ -23,7 +23,7 @@ Production-proven architecture, refined in real projects since 2012
 Design your game as explicit, testable states — from Boot and Meta to Core gameplay
 
 
-## When game flow starts working against you
+## When game state architecture starts working against you
 
 As projects grow, game state logic becomes fragile and hard to reason about
 
@@ -36,8 +36,8 @@ As projects grow, game state logic becomes fragile and hard to reason about
 Flexy.GameFlow addresses this by design:
 
 - A single hierarchical state model for gameplay, meta, UI, and overlays
-- Any state can be launched and tested instantly, in isolation
-- States and transitions are awaitable, with explicit input and output data flow
+- Any state can be launched and tested instantly, in isolation e.g., you can enter Play Mode directly in a menu, popup, or gameplay state without running entire game from boot
+- States and transitions are awaitable, with explicit input and output data between states
 - Each state owns its lifecycle and cleanup
 - The same architecture scales from prototype to production
 
@@ -49,6 +49,7 @@ Flexy.GameFlow is a good fit if:
 - You have multiple game states such as menus, meta, gameplay, or overlays
 - Your game states need separate scenes or non-trivial scene navigation
 - You care about clean architecture, testability, and long-term maintainability
+- Flexy.GameFlow is an architectural foundation and is intended to be adopted early in a project
 
 This asset is likely not a good fit if:
 - You want a visual-only solution without writing code
@@ -58,57 +59,19 @@ This asset is likely not a good fit if:
 ## Why Flexy.GameFlow specifically?
 
 - Designed by a developer who builds complete games, not just frameworks
-- Used as a foundation for other Flexy.Tools systems and real projects
+- Used as a foundation in multiple shipped games and long-term production projects
+- including large-scale projects under NDA
 - Framework-agnostic by intent, with no forced UI system, scene structure, or networking stack
 - Free Lite version to validate the architecture before committing
 
 
 ## Flexy Game.Flow vs Other Solutions
 
-<details><summary> Is this just a classic FSM? </summary>
+- **Classic FSMs** do not scale to full game state hierarchies with async transitions
+- **Scene managers** couple logic to scenes and make state testing difficult
+- **Custom solutions** tend to degrade over time and are hard to maintain
 
-Classic FSMs work well for isolated systems like AI or animation  
-They do not scale to managing the full game state hierarchy
-
-They break down when:
-- States are spread across scenes and managers
-- Hierarchy or parallel state layers are required
-- Transitions depend on context or async logic
-
-<br></details>
-
-<details><summary> Why not Scene Managers? </summary>
-
-Scene managers treat scenes as the primary unit of control  
-This works early, but breaks down as projects grow
-
-Common problems:
-- Game logic becomes tightly coupled to scene structure
-- UI, gameplay, and meta are handled by separate systems
-- Testing a single state requires loading the whole game
-
-Flexy.GameFlow inverts this:
-- Game states are first-class citizens
-- Scenes are an implementation detail
-- Gameplay states, overlays, and popups share one model
-
-**You orchestrate game behavior — scenes follow**
-
-<br></details>
-
-<details><summary> Why not custom state management? </summary>
-
-Custom solutions often:
-- Start simple and degrade over time
-- Become tightly coupled and hard to test
-- Require full game boot to debug specific states
-
-Flexy.GameFlow provides:
-- A proven architecture with clear boundaries
-- Full control via a public API
-- Structure without rigidity
-
-<br></details>
+**Flexy.GameFlow** treats **game states as first-class**, with hierarchy, isolation, and deterministic async transitions
 
 
 ## Advanced Capabilities
