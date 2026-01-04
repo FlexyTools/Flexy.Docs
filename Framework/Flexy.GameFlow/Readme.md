@@ -6,7 +6,8 @@
 # Flexy.GameFlow
 
 Stop fighting your game flow  
-Universal hierarchical state system for managing game states, scenes, and transitions - clean, testable, and scalable from prototype to production
+Universal hierarchical state system for managing game states, scenes, and transitions  
+clean, testable, and scalable from prototype to production
   
 
 [Github](https://github.com/FlexyTools/Flexy.GameFlow)
@@ -38,7 +39,7 @@ Design your game as explicit, testable states — from Boot and Meta to Core gam
 **Development workflow**
 - Testing a specific state requires running the whole game
 - Passing data between states or scenes becomes cumbersome
-- Debugging transitions feels unpredictable
+- Debugging game states and transitions is painful
 
 
 ## How Flexy.GameFlow solves this
@@ -48,7 +49,7 @@ Gameplay, Meta flow, UI, cutscenes, and overlays are all game states
 
 
 - **Launch and test any game state instantly**  
-No game boot from the beginning
+Game Flow initializes the correct state hierarchy before the first frame 
 
 
 - **Awaitable states and transitions**  
@@ -74,16 +75,15 @@ No forced UI system, scene structure, or networking stack
 ## Preface
 
 Any Game is set of Game States that transition into each other  
-Big ones like Boot, Lobby(Metagame), Battle(Coregame)  
-And small ones like main menu, settings, loading, play state, pause state, cutscene, win\loose screen etc
+Big Stages like Boot, Lobby(Metagame), Battle(Coregame)  
+And their states like main menu, settings, loading, play state, pause state, cutscene, win\loose screen etc
 
 Hierarchical game state management is a fundamental part of every game  
 Flexy.GameFlow is a **Game State manager**, not a UI manager
+Every state must have some UI to allow control for Gamer but this in developer responsibility
 
-UI exists because game states exist - Flexy.UI simply builds on top of this foundation
-
-Flexy.GameFlow is intentionally agnostic to rendering, UI frameworks, and networking solutions,  
-allowing the same architecture to support singleplayer, multiplayer, coop, and split-screen projects without structural changes
+Flexy.GameFlow is intentionally agnostic to rendering, UI frameworks, and networking solutions  
+Support singleplayer, multiplayer, coop, and split-screen projects without structural changes
 
 
 ## Advanced Capabilities
