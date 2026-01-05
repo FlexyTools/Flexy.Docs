@@ -1,57 +1,34 @@
-# **Flexy.Core GameContext**
+![Img](Src/Cover.webp)
 
-[Home](Readme.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Common Utilities](CommonUtilities.md)
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.UI](Readme.md) / Binders
+
+# Binders 
+
+Ready to use binders for UI elements 
+Every binder is small MonoBeh with very small and specific bind code
+You will easily create our oun for specific needs of your project
+
+| Class                          | Description                                                                        |  
+|:-------------------------------|:-----------------------------------------------------------------------------------|
+| Binder_Text                    | Bind String property to TMP_Text.text UGui                                         |
+| Binder_Image                   | Bind Sprite property to Image.sprite                                               |  
+| Binder_RawImage                | Bind Texture2D property to RawImage.texture                                        |
+| Binder_GraphicColor            | Bind color property to Graphic.color                                               |
+| Binder_Slider                  | Bind Single property to Slider.value                                               |
+| Binder_ButtonEnabled           | Bind Boolean property to Button.interactable                                       |
+| Binder_BehaviourEnabledBoolean | Bind Boolean property to `true` and `false` behaviour.enabled                      |
+| Rebinder_Periodic              | Rebind all binders on GameObject with period                                       |
 
 
-Flexy way to think about game dependencies and their composition. **Context based**  
-You can think like DI Container but more clear and tied to scenes and GameObjects instead of live in thin air   
+Special Collections binding solution to bind collection of items with ease (see any [GameTemplate](../../GameTemplates/Readme.md	) for usage sample) 
 
-Any GameObject or Component always lives in context! actually deep inside hierarchy of contexts  
-From closest to farthest:
-- GameObject
-- Parent line of GameObjects to the root
-- Scene
-- Unity
-- C# Env
-- OS 
+| Class                          | Description                                                                        |  
+|:-------------------------------|:-----------------------------------------------------------------------------------|
+| Binder_Collection              | Bind special Collection struct to UI list of items (spawn Prefab per item)         |
+| BindMedium                     | Special middle layer behaviour to bind to dynamically created typed objects        |
+| Collection                     | Collection struct for Binder_Collection that carry IEnumrable and useful callbacks |
 
-Programmers can access any service from any context from any place like:
-```csharp
-gameObject.layer
-gameObject.transform.root
-gameObject.scene.name
-Physics.Raycast
-Screen.width
-Single.Parse
-Thread.Sleep
-Environment.ProcessorCount
-File.Exists
-``` 
-We know that it is safe to access any of those contexts because they was bord before our Component and will die only after it
 
-GameContexts continue this concept to user space. 
-So we create GameContexts hierarchy in game fill it with services and put objects to live in it  
-Everything visually 
+<br>
 
-They replace SceneContext and default unity context hierarchy becomes (sample of Networked FPS):
-- GameObject
-- Parent line of GameObjects to the root
-- ---
-- GameModeContext
-- MapContext
-- CoregameContext
-- BootContext
-- GlobalContext
-- ---
-- Unity
-- C# Env
-- OS
-
-There is also MetagameContext instead of Coregame amp and GameMode when we not in battle  
-Every context have their own services that inits before any other code can run so it is safe to access any service  
-You can access services directly or of you wish you can write simple methof that injects services from context to your component like any DI containers do
-
-Pairing with GameFlow package it is very powerful system to manager game flow and services
-FlexyTemplate Barley-Break shows many project organisation concepts and showcase proposed way to use GameContexts 
-
-[Home](Readme.md) | [Actions](Actions.md) | [Bindings](Bindings.md) | [Common Utilities](CommonUtilities.md)
+[Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / [Flexy.UI](Readme.md) / Binders
