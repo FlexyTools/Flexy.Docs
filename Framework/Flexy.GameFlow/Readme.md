@@ -6,8 +6,8 @@
 # Flexy.GameFlow
 
 
-Stop fighting scene transitions
-A production-proven game state architecture for Unity
+Stop fighting scene transitions  
+A production-proven game state architecture for Unity  
 Manage menus, gameplay, and scenes as explicit, testable states — from prototype to shipped game
 
 
@@ -19,7 +19,7 @@ Manage menus, gameplay, and scenes as explicit, testable states — from prototy
 | [Scripting Api](ScriptingApi/Readme.md)
 | [Showcase(Template project)](../../GameTemplates/Barley-Breaks/Readme.md)
 
-Flexy.GameFlow is a hierarchical game state architecture for Unity that replaces ad-hoc menus, gameplay, and scene transition code, with explicit, testable game states
+Flexy.GameFlow is a hierarchical game state architecture for Unity that replaces ad-hoc menus, gameplay, and scene transition code, with explicit, testable game states  
 Production-proven architecture, refined in real projects since 2012  
 
 
@@ -27,16 +27,16 @@ Production-proven architecture, refined in real projects since 2012
 
 As projects grow, game state logic becomes fragile and hard to reason about
 
-- Dependencies spread across systems, even when using DI
 - Adding new menu, scene or gameplay state introduces hidden coupling and side effects
 - Scene-driven flows break as requirements change
-- Transition chains become complex and difficult to maintain
+- Async transitions turn into complex callback chains
+- Dependencies spread across MonoBehaviours, even when using DI
 - Testing a single state requires running the entire game
 
 Flexy.GameFlow addresses this by design:
 
-- One hierarchical state model for boot, menus, and gameplay states
 - Any state can be launched and tested instantly, in isolation, without running entire game from boot
+- One hierarchical state model for boot, menus, and gameplay states
 - States and transitions are awaitable, with explicit input/output
 - Each state owns its lifecycle and cleanup
 - Scales cleanly from prototype to production
@@ -46,23 +46,15 @@ Flexy.GameFlow addresses this by design:
 
 Flexy.GameFlow is a good fit if:
 - Your project grows beyond a simple prototype
-- You have multiple game states such as menus, meta, gameplay, or overlays
-- Your game states need separate scenes or non-trivial scene navigation
+- You have multiple game states such as menus, gameplay states, or overlays
+- Scene management is no longer trivial
 - You care about clean architecture, testability, and long-term maintainability
-- Flexy.GameFlow is an architectural foundation and is intended to be adopted early in a project
+
+Flexy.GameFlow is an architectural foundation and is intended to be adopted early in a project
 
 This asset is likely not a good fit if:
-- You want a visual-only solution without writing code
-- Your game states and scenes are simple and unlikely to grow in complexity
-
-
-## Why Flexy.GameFlow specifically?
-
-- Designed by a developer who builds complete games, not just frameworks
-- Used as a foundation in multiple shipped games and long-term production projects
-- including large-scale projects under NDA
-- Framework-agnostic by intent, with no forced UI system, scene structure, or networking stack
-- Free Lite version to validate the architecture before committing
+- You want a visual-only, no-code solution
+- Your game flow is simple and unlikely to grow
 
 
 ## Why not FSMs, Scene Managers, or Custom Flow Code?
@@ -74,7 +66,16 @@ This asset is likely not a good fit if:
 **Flexy.GameFlow** treats **game states as first-class**, with hierarchy, isolation, and deterministic async transitions
 
 
-## Advanced Capabilities
+## Why Flexy.GameFlow specifically?
+
+- Free Lite version to validate the architecture before committing
+- Designed and used by a developer shipping full games — not just demo frameworks
+- Used as a foundation in multiple shipped games and long-term production projects
+- including large-scale projects under NDA
+- Framework-agnostic by intent, with no forced UI system, scene structure, or networking stack
+
+
+## What you can do with Flexy.GameFlow
 
 - Hierarchical game state composition with nested and layered states
 - Clear separation between state lifecycle, logic, and view
@@ -91,6 +92,10 @@ This asset is likely not a good fit if:
 
 - Modern C# (C# 10)
 - Designed to work with Domain Reload disabled
+- Tested from Unity 2022.3 and up to Unity 6.3
+- Depend on Flexy.Core and Flexy.AssetRefs
+- Render pipeline agnostic
+- Platform agnostic (shipped on Windows, macOS, Linux, Android, iOS)
 
 
 ### Features
