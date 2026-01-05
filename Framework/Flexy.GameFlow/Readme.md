@@ -19,7 +19,8 @@ Manage menus, gameplay, and scenes as explicit, testable states — from prototy
 | [Scripting Api](ScriptingApi/Readme.md)
 | [Showcase(Template project)](../../GameTemplates/Barley-Breaks/Readme.md)
 
-Flexy.GameFlow is a hierarchical game state architecture for Unity that replaces ad-hoc menus, gameplay, and scene transition code, with explicit, testable game states  
+
+Flexy.GameFlow replaces fragile menu, gameplay, and scene transition code with explicit, testable game states.
 Production-proven architecture, refined in real projects since 2012  
 
 
@@ -35,11 +36,15 @@ As projects grow, game state logic becomes fragile and hard to reason about
 
 Flexy.GameFlow addresses this by design:
 
-- Any state can be launched and tested instantly, in isolation, without running entire game from boot
 - One hierarchical state model for boot, menus, and gameplay states
+- Any state can be launched and tested directly, without running entire game from boot
+- Enter Play Mode from any scene with the correct state hierarchy from the first frame
+- Game states can be developed and tested in isolation
+- Scene loading and unloading driven by game states
 - States and transitions are awaitable, with explicit input/output
 - Each state owns its lifecycle and cleanup
-- Scales cleanly from prototype to production
+- Support for multi-scene maps and non-trivial navigation
+- Scales cleanly from prototype to production 
 
 
 ## Is this for you?
@@ -50,18 +55,17 @@ Flexy.GameFlow is a good fit if:
 - Scene management is no longer trivial
 - You care about clean architecture, testability, and long-term maintainability
 
-Flexy.GameFlow is an architectural foundation and is intended to be adopted early in a project
+**Flexy.GameFlow is an architectural foundation and is intended to be adopted early in a project**
 
 This asset is likely not a good fit if:
 - You want a visual-only, no-code solution
 - Your game flow is simple and unlikely to grow
 
 
-## Why not FSMs, Scene Managers, or Custom Flow Code?
+## Why not FSMs, Scene Managers?
 
 - **Classic FSMs** do not scale to full game state hierarchies with async transitions
 - **Scene managers** couple logic to scenes and make state testing difficult
-- **Custom solutions** tend to degrade over time and are hard to maintain
 
 **Flexy.GameFlow** treats **game states as first-class**, with hierarchy, isolation, and deterministic async transitions
 
@@ -72,23 +76,15 @@ This asset is likely not a good fit if:
 - Designed and used by a developer shipping full games — not just demo frameworks
 - Used as a foundation in multiple shipped games and long-term production projects
 - including large-scale projects under NDA
-- Framework-agnostic by intent, with no forced UI system, scene structure, or networking stack
-
-
-## What you can do with Flexy.GameFlow
-
-- Hierarchical game state composition with nested and layered states
-- Clear separation between state lifecycle, logic, and view
-- Enter Play Mode from any scene with the correct state hierarchy from the first frame
-- Game states can be developed and tested in isolation
-- Scene loading and unloading driven by game states
-- Support for multi-scene maps and non-trivial navigation
+- No forced UI system, scene structure, or networking stack
 
 
 [Start Guide](StartGuide.md) | [How It Works & Use Cases](HowItWorks_UseCases.md) | [Scripting Api](ScriptingApi/Readme.md) | [Showcase(Template project)](../GameTemplates.md)
 
 
 ## Technical details
+
+### Compatibility
 
 - Modern C# (C# 10)
 - Designed to work with Domain Reload disabled
@@ -98,7 +94,7 @@ This asset is likely not a good fit if:
 - Platform agnostic (shipped on Windows, macOS, Linux, Android, iOS)
 
 
-### Features
+### Capabilities
 
 - Single `State` base class for all state types (gameplay, UI, substates)
 - Extensible lifecycle via virtual Show/Hide and BackShow/ForwardHide methods
@@ -109,10 +105,6 @@ This asset is likely not a good fit if:
 - Awaitable states and transitions with strongly defined results
 - Cross-scene references without hard scene dependencies
 - Game states can be instantiated and tested in isolation
-
-
-### Core Architecture & Runtime
-
 - Bootstrap prefab initializes the GameFlow runtime
 - Central `ServiceGameFlow` API for controlling game states from code
 - Explicit `GameStage` abstraction for major phases (Boot, Meta, Core)
@@ -122,7 +114,7 @@ This asset is likely not a good fit if:
 - Explicit `TransitionOperation` for deterministic state transitions
 
 
-### Additional GameFlow Pro Features
+### Additional GameFlow Pro Capabilities
 
 - Extended control over Play Mode initialization
 - Additional virtual Open/Close and Forward/Back lifecycle methods
