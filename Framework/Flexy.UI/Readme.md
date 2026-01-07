@@ -11,7 +11,7 @@ Build UI Windows, Loaders, and Popups with clear structure and minimal code
 
 [GitHub](https://github.com/FlexyTools/Flexy.UI)
 
-[Start Guide](StartGuide.md) | [Binders](Binders.md) | [Extra](Extra.md) | [Misc](Misc.md) | [Showcase (Template project)](../../GameTemplates/Readme.md)
+[Start Guide](StartGuide.md) | [Binders](Binders.md) | [Extra](Extra.md) | [Misc](Misc.md) | [Details](PackageDetails.md) | [Showcase (Template project)](../../GameTemplates/Readme.md)
 
 
 ## What Is Flexy.UI
@@ -76,20 +76,16 @@ This ensures correct execution even inside `Awake`
 
 ## How It Fits Into Your Project
 
-Flexy.UI is built on top of Flexy.GameFlow and Flexy.Core  
+Flexy.UI is built on top of [Flexy.GameFlow](../Flexy.GameFlow/Readme.md) and [Flexy.Core](../Flexy.Core/Readme.md)  
 These provide:
 - Game contexts
 - Controlled lifecycle stages
 - Safe initialization order
 
-This guarantees that UI logic always runs after 
-
-See:
-- [Flexy.Core](../Flexy.Core/Readme.md) for game contexts
-- [Flexy.GameFlow](../Flexy.GameFlow/Readme.md) for lifecycle and stages
+This guarantees that UI logic always runs after full runtime environment initialisation
 
 
-[Start Guide](StartGuide.md) | [Binders](Binders.md) | [Extra](Extra.md) | [Misc](Misc.md) | [Showcase(Template project)](../../GameTemplates/Readme.md)
+[Start Guide](StartGuide.md) | [Binders](Binders.md) | [Extra](Extra.md) | [Misc](Misc.md) | [Showcase(Template project)](../../GameTemplates/Readme.md)  
 The Showcase is provided as a **template project**, not isolated demo scenes  
 You can open it, build it, and install a fully working application  
 This allows real-world testing instead of artificial examples
