@@ -4,101 +4,91 @@
 
 # Flexy.UI
 
-**A production-proven UI manager for clean and scalable Unity UI**
+**Clean, scalable, and production-proven UI screen management for Unity**
 
-Stop hardcoding UI logic into MonoBehaviours  
-Build UI Windows, Loaders, and Popups with clear structure and minimal code
+Create UI Screens, Popups, and Loaders with a consistent workflow  
+Visual setup, minimal code, no enums, no prefab path wiring  
+Suitable for both rapid prototyping and long-term projects
 
 [GitHub](https://github.com/FlexyTools/Flexy.UI)
 
 [Start Guide](StartGuide.md) | [Binders](Binders.md) | [Extra](Extra.md) | [Misc](Misc.md) | [Details](PackageDetails.md) | [Showcase (Template project)](../../GameTemplates/Readme.md)
 
 
-## What Is Flexy.UI
+## Overview
 
-Flexy.UI is a UI architecture framework for Unity  
-It helps you build and maintain complex UI without turning your codebase into tightly coupled MonoBehaviours
+Flexy.UI is a UI screen management system for Unity focused on safe iteration and clean structure
 
-Flexy.UI separates UI logic, presentation, and lifecycle responsibilities so your UI remains readable, testable, and easy to extend as the project grows
-
-It scales from small prototypes to long-term production projects where UI complexity increases over time
-
-The architecture has been refined in real production projects since 2012
-
-
-## Why Use Flexy.UI
-
-As Unity projects grow, UI code often becomes:
-- Hard to reason about
-- Difficult to test in isolation
-- Risky to refactor
-- Expensive to extend with new features
-
-Flexy.UI solves this by providing:
-- A clear separation between UI logic and Unity components
-- Explicit UI intent expressed directly in code
-- Predictable UI initialization inside a valid runtime context
-
-This allows you to change, reuse, and extend UI without breaking unrelated systems
+You work with standard Unity uGUI  
+UI layout is created visually  
+UI behavior is written in clean MonoBehaviour code  
+UI elements are connected to screens using binders  
+Used and evolved in production projects since 2012
 
 
-## Is This for You?
+## Key Benefits
 
-**Flexy.UI is a good fit if:**
-- Your project has grown beyond a simple prototype
-- You want UI logic that stays readable over time
-- You reuse UI panels across multiple screens
-- UI artists and UI developers work independently
-- You care about architecture, testability, and long-term maintainability
+- Fast iteration on individual UI screens
+- No enum or string identifiers
+- No prefab path wiring
+- No Resources folder requirements
+- Screens run in a valid runtime context
+- The same UI setup works for prototypes and final builds
 
 
-**This asset may not be a good fit if:**
-- You prefer to hardcode all UI control logic directly in MonoBehaviours
-- You want a visual UI builder without coding
+## How It Works
+
+- Duplicate an existing UI Screen prefab
+- Create a Screen MonoBehaviour
+- Bind UI elements visually using binders
+- Open the screen from UI events or runtime code
+
+This is sufficient to add a working screen
 
 
 ## Key Features
 
-- Every UIWindow or Popup is a separate state
-- Clear separation between MonoBehaviour and UIView
-- UI intent explicitly expressed in code
-- Two-way communication with Binders
-- Easy binding of collections with custom UI items
-- Simple creation of reusable UI modules
-- Develop and test UI Windows in isolation
-- Near-instant window opening when Domain Reload is disabled
-- UI initialization always happens inside a valid runtime context
-- Created for Unity uGui but can be adopted to any UI Framework 
-
-When entering PlayMode from UIWindow, the runtime environment is already initialized  
-This ensures correct execution even inside `Awake`
+- MonoBehaviour-centric workflow
+- Visual UI setup using binders
+- Minimal required code per screen
+- UI screens can be tested in isolation
+- History-aware screen navigation
+- Runtime-safe screen execution
+- Explicit screen and game stage transitions
+- Screen prefabs loaded on demand
+- No refactors when moving to Asset Bundles
 
 
-## How It Fits Into Your Project
+## Who It Is For
 
-Flexy.UI is built on top of [Flexy.GameFlow](../Flexy.GameFlow/Readme.md) and [Flexy.Core](../Flexy.Core/Readme.md)  
-These provide:
-- Game contexts
-- Controlled lifecycle stages
-- Safe initialization order
+Good fit if you:
+- Iterate on UI screens frequently
+- Expect UI to change during development
+- Build prototypes and long-term projects
+- Work solo or in a team
+- Prefer visual setup over hardcoded references
 
-This guarantees that UI logic always runs after full runtime environment initialisation
+Not a good fit if you:
+- Need a no-code UI solution
+- Expect a visual UI layout builder
+- Do not want to write C# code
 
 
-[Start Guide](StartGuide.md) | [Binders](Binders.md) | [Extra](Extra.md) | [Misc](Misc.md) | [Showcase(Template project)](../../GameTemplates/Readme.md)  
-The Showcase is provided as a **template project**, not isolated demo scenes  
-You can open it, build it, and install a fully working application  
-This allows real-world testing instead of artificial examples
+## Showcase Project
+- Includes a buildable template project
+
+The project can be opened, built, and run  
+This allows testing Flexy.UI in real project conditions
 
 
 ## Technical Details
 
-- Modern C# (C# 10)
+- Uses modern C# features (C# 10)
 - Designed to work with Domain Reload disabled
-- Tested with Unity 2022.3 up to Unity 6.3
+- Tested with Unity 2022.3 through Unity 6.3
 - Depends on Flexy.GameFlow and Unity uGUI
 - Render pipeline agnostic
-- Platform agnostic  
+- Platform agnostic 
 
 <br/>
 

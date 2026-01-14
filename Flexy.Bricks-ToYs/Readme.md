@@ -16,7 +16,8 @@ With those you can create modular, testable and fault-tolerant bricks(modules), 
 - **SPOT** - every system has a single responsible source of truth  
 - **KISS** - write simple predictable and understandable code  
 - **Pure & self-sufficient** -  independent, modular systems  
-- **Plug & Play** - context-based dependency resolution instead of specific initialization logic  
+- **Plug & Play** - context-based dependency resolution instead of specific initialization logic
+- **Fire & Forget** - systematical resource management, no manual management   
 - **State Driven** - the game is controlled entirely via States, which is served by GameContexts  
 - **Data Driven** - game systems work as IO systems through data stream and async message bus  
 - **Nature Oriented (Domain Based)** - game systems align closely with natural game design domains  
