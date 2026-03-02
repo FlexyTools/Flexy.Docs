@@ -2,7 +2,7 @@
 
 # Flow Graph
 
-[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / FlowGraph
+[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Flow Graph
 
 
 ## Description
@@ -18,7 +18,7 @@ So we have 6 axes of freedom here :)
 
 | Property | Description              |  
 |----------|--------------------------|
-| Service  | Access Service_GameFlow  |
+| Flow     | Access Service_GameFlow  |
 | Root     | Access RootNode of graph |  
 
 
@@ -29,9 +29,8 @@ So we have 6 axes of freedom here :)
 | Open ( stageRef )             | Load, Spawn and Open Stage by **stageRef**                                                                     |  
 | Open ( stateRef, callSource ) | Load if not loaded, Spawn if not spawned and Open state by **stageRef**. **callSource** to know where to spawn |
 | TryGoBack                     | Try Go Back in history of opened states if current node allows                                                 |
-
-Close?
+| GetParentForSubState          | Gets or Opens ParentNode for SubState                                                                          |
 
 <br/>
 
-[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / FlowGraph
+[Flexy.Tools](../../../Readme.md) / [Framework](../../Readme.md) / [Flexy.GameFlow](../Readme.md) / [Scripting Api](Readme.md) / Flow Graph
