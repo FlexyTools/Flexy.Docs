@@ -20,8 +20,8 @@ It is create to showcase Flexy Framework and Flexy Project structure so Coregame
 Also every FlexyTT show you how to structure project and code to keep it clean, modular and easy to maintain
 
 ### Structure:
-- [Project structure and Assets](ProjectStructureAndAssets.md)
-- [Code Structure and Flexy Project Template](CodeStructureAndFlexyProjectTemplate.md) 
+
+projects uses common recommended [Flexy Project Structure](../../Flexy.Bricks-ToYs/ProjectStructure/Readme.md)
 
 <br/>
 
