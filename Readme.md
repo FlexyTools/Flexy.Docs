@@ -10,8 +10,6 @@
 Documentation and issue tracker for all Flexy packages and Templates
 
 
-## Flexy Tools
-
 It is complete system for creating games:  
 - Starting from architecture principles and patterns for games **Flexy.Bricks\ToYs**  
 - Going through **Packages** that implement necessary building **Bricks / ToYs**
