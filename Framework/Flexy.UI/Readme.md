@@ -10,7 +10,9 @@ Create UI Screens, Popups, and Loaders with a consistent workflow
 Visual setup, minimal code, no enums, no prefab path wiring  
 Suitable for both rapid prototyping and long-term projects
 
-[GitHub](https://github.com/FlexyTools/Flexy.UI)
+[GitHub](https://github.com/FlexyTools/Flexy.UI-Lite)
+| [Forum](https://discussions.unity.com/t/flexy/1711631)
+| [AssetStore](https://u3d.as/3NM8)  
 
 [Start Guide](StartGuide.md) | [Binders](Binders.md) | [Extra](Extra.md) | [Misc](Misc.md) | [Details](PackageDetails.md) | [Showcase (Template project)](../../GameTemplates/Readme.md)
 

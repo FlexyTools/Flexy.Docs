@@ -10,15 +10,16 @@ Hierarchical game state architecture for managing game states and scenes
 Clean and testable from prototype to production
 
 [Github Lite](https://github.com/FlexyTools/Flexy.GameFlow)
-<!-- | [Unity Forum](https://discussions.unity.com/t/a/1700923)
-| [AssetStore](https://u3d.as/3LKx) -->  
+| [Forum](https://discussions.unity.com/t/flexy/1711626)
+| [AssetStore](https://u3d.as/3MMm)  
+
 [Start Guide](StartGuide.md)
 | [How It Works & Use Cases](HowItWorks_UseCases.md)
 | [Scripting Api](ScriptingApi/Readme.md)
 | [Showcase(Template project)](../../GameTemplates/Readme.md)
 
 
-Production-proven architecture, refined in real projects since 2012  
+Production-proven architecture, refined in real projects since 2014  
 Design your game as explicit, testable states — from Boot and Meta to Core gameplay
 
 ## Overview
@@ -39,7 +40,6 @@ your game becomes a structured State graph with clear ownership and lifecycle
 - Kee p every part of the game isolated, testable, and deterministic
 - Feels like vanilla Unity — just much more powerful
 
-Flexy.GameFlow has been used and refined in real production projects since 2014
 
 ## When game state architecture starts working against you
 
@@ -102,6 +102,7 @@ Flexy.GameFlow addresses these problems by design
 - Asynchronous preload of state views
 - Reboot game in full or from first stage
 
+
 ## Is This for You?
 
 Flexy.GameFlow is a good fit if you:
@@ -123,6 +124,7 @@ Flexy.GameFlow is not a good fit if you:
 
 Flexy.GameFlow is an architectural foundation and is intended to be adopted early
 
+
 ## Why Not FSMs or Scene Managers?
 
 - Classic FSMs do not scale to full game hierarchies with async transitions
@@ -131,6 +133,7 @@ Flexy.GameFlow is an architectural foundation and is intended to be adopted earl
 Flexy.GameFlow treats game states as first-class, with hierarchy, isolation, and deterministic transitions  
 It uses standard Unity concepts with minimal additional abstractions  
 It provides a higher-level layer that defines how game states relate, transition, and execute safely
+
 
 ## How to create new state
 
