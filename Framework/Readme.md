@@ -19,15 +19,21 @@ If you want to alter package, but it is readonly, embed it manually (by copying 
 | [Flexy.Core](Flexy.Core/Readme.md) <br/> Free                 | Core package of **Flexy Framework** that every other package depends on                                                        | [Unity Forum](link) <br/> [Github](https://github.com/FlexyTools/Flexy.Core)                                                                                       |
 | [Flexy.GameFlow](Flexy.GameFlow/Readme.md) <br/> Lite / Pro   | Universal Hierarchical state machine that will manage your game states, transitions, in so simple way you never seen before    | [Unity Forum](link) <br/> [Github_Lite](https://github.com/FlexyTools/Flexy.GameFlow-Lite) <br/> [Github_Pro](https://github.com/FlexyTools/Flexy.GameFlow)        |
 | [Flexy.UI](Flexy.UI/Readme.md) <br/> Lite / Pro               | Universal Hierarchical stater machine that will manage your game states and transitions in so simple way you never seen before | [Unity Forum](link) <br/> [Github_Lite](https://github.com/FlexyTools/Flexy.UI-Lite) <br/> [Github_Pro](https://github.com/FlexyTools/Flexy.UI)                    |
-| [Flexy.GameSettings](Flexy.GameSettings/Readme.md) <br/> Free | Easily store game settings for settings window or any other needs with just one line per setting                               | [Unity Forum](https://discussions.unity.com/t/a/1700923) <br/> [Asset Store](https://u3d.as/3LKx) <br/> [Github](https://github.com/FlexyTools/Flexy.GameSettings) |
 
-## Meta
+## Utils
+| Package                                                       | Description                                                                                      | Links                                                                                                                                                              |  
+|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Flexy.GameSettings](Flexy.GameSettings/Readme.md) <br/> Free | Easily store game settings for settings window or any other needs with just one line per setting | [Unity Forum](https://discussions.unity.com/t/a/1700923) <br/> [Asset Store](https://u3d.as/3LKx) <br/> [Github](https://github.com/FlexyTools/Flexy.GameSettings) |
+| [Flexy.Log](Flexy.Log/Readme.md)                              | Structured, Customizable and Allocation free drop in replacement logging for Unity               | [Asset Store](https://u3d.as/3R6j) <br/> |
+
+
+## Menu
 | Package               | Description              | Links |  
 |-----------------------|--------------------------|-------|
 | Under Construction... | Ready to go Meta screens |       |
 
 
-## Core
+## Play
 | Package               | Description             | Links |  
 |-----------------------|-------------------------|-------|
 | Under Construction... | Ready to play Core ToYs |       |
