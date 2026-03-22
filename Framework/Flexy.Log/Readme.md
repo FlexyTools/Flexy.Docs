@@ -26,10 +26,20 @@ And make them Reach, Filterable and Allocation free on string interpolation
 - Reroute all calls to `Debug.Log` with `Flexy.Log.Debug` and handle logging in Allocation Free way
 
 
+## How To use
+
+- Enable C#10 support in project settings (add `-langversion:10` to additional compiler arguments)
+- add line `global using Debug = Flexy.Log.Debug;` in one cs file in project to reroute calls  
+
+
 ## Technical Details
 
 - Uses modern C# features (C# 10)
 - Tested with Unity 2022.3 through Unity 6.3
+
+<br/>
+
+### Have Fun :)
 
 <br/>
 
