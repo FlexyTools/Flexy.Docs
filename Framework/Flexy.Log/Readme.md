@@ -1,17 +1,18 @@
-﻿![Img](../Cover.webp)
+﻿![Img](Src/Cover.webp)
 
 [Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / Flexy.Log
 
 # Flexy.Log
 
 **Structured, Customizable and Allocation free   
-drop in replacement logging for Unity**
+drop in replacement logging for Unity**  
 
-Exted logs in your projects
-Easy replace logs in entire project with one line of code
+Exted logs in your projects  
+Easy replace logs in entire project with one line of code  
 And make them Reach, Filterable and Allocation free on string interpolation
+  
 
-[AssetStore](https://u3d.as/3R6j)  
+[AssetStore](https://u3d.as/3R6j) | [Scripting Api](ScriptingApi/Readme.md)
 
 
 ## Key Benefits
@@ -19,6 +20,7 @@ And make them Reach, Filterable and Allocation free on string interpolation
 - Almost free on disabled logs
 - Very low perf impact on enabled log filtering
 - Enable/Disable logs in files on demand without rebuild/redeploy
+- Customizable log formatting
 
 
 ## How It Works
