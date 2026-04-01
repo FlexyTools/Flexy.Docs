@@ -34,6 +34,13 @@ And make them Reach, Filterable and Allocation free on string interpolation
 - add line `global using Debug = Flexy.Log.Debug;` in one cs file in project to reroute calls  
 
 
+## Additional
+
+UnityEngine.LogFormat always allocates!  
+To prohibit this, you can remove log format methods by adding define FLEXY_LOG__DISABLE_LOG_FORMAT to project settings  
+Then fix errors in all places where you use Debug.LogFormat
+
+
 ## Technical Details
 
 - Uses modern C# features (C# 10)
