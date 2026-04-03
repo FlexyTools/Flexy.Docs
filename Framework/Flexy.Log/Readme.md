@@ -31,8 +31,13 @@ And make them Reach, Filterable and Allocation free on string interpolation
 ## How To use
 
 - Enable C#10 support in project settings (add `-langversion:10` to additional compiler arguments)
-- add line `global using Debug = Flexy.Log.Debug;` in one cs file in project to reroute calls  
-
+- Add line `global using Debug = Flexy.Log.Debug;` in one cs file in project to reroute calls  
+- Set log level as usual: `Debug.unityLogger.filterLogType = LogType.Warning;`
+- Set log filtering level by: `Debug.Filter!.FilterFrom = LogType.Warning;`
+- Allow logs from file for filter by
+  - `Debug.Filter?.AllowLogOnPath ("./PathToFile.cs", "MethodName");`
+  - `Debug.Filter?.AllowLogOnPath ("./Assets/!Game/!Code/Settings/Window_GameSettings.cs", "Update");`
+  - `Debug.Filter?.AllowLogOnPath ("./Packages/fun.flexy.core/Runtime/GameContexts/GameContext.cs");` 
 
 ## Additional
 
