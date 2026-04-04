@@ -10,9 +10,9 @@ drop in replacement logging for Unity**
 Exted logs in your projects  
 Easy replace logs in entire project with one line of code  
 And make them Reach, Filterable and Allocation free on string interpolation
-  
 
-[AssetStore](https://u3d.as/3R6j) | [Scripting Api](ScriptingApi/Readme.md)
+
+[Forum](https://discussions.unity.com/t/flexy/1715000) | [AssetStore](https://u3d.as/3R6j) | [Scripting Api](ScriptingApi/Readme.md)
 
 
 ## Key Benefits
