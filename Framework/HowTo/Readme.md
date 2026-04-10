@@ -1,4 +1,4 @@
-![Img](Cover.webp)
+![Img](../Cover.webp)
 
 [Flexy.Tools](../../Readme.md) / [Framework](../Readme.md) / How To
 
