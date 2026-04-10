@@ -12,6 +12,8 @@ Here is documentation of all Flexy.Framework packages: Base, Meta, Core, QoL and
 All packages created as UPM packages so you can easily install them from PackageManager by address   
 If you want to alter package, but it is readonly, embed it manually (by copying from Library/PackageCache to Packages) or use dedicated button in package manager 
 
+[How to](HowTo/Readme.md)
+
 ## Base
 | Package                                                       | Description                                                                                                                 | Links                                                                                                                                                   |  
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
