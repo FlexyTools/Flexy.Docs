@@ -14,7 +14,7 @@ Open Assets/FlowSample/Boot.unity and press Play
 You can see example of GameFlow in action with comments on every state and in Code
 
 Here is very breaf explanation of work with GameFlow, but better look at Barley-Breaks  
-Ask questions on Flexy.GameFlow Unity Discussions Thread
+Ask questions on [Flexy.GameFlow Unity Discussions Thread](https://discussions.unity.com/t/flexy/1711626)
 
 
 ### Advanced Level
@@ -22,7 +22,7 @@ Ask questions on Flexy.GameFlow Unity Discussions Thread
 Clone template repo [**Barley-Breaks**](https://github.com/FlexyTools/Flexy-TT.BarleyBreak) or [**GameFlow MinimalShowcase**](https://github.com/FlexyTools/FlexyTT.GameFlow-MinimalShowcase)   
 They are most complete example of GameFlow usage  
 Learn how they structured and works  
-Ask questions on Flexy.GameFlow Unity Discussions Thread 
+Ask questions on [Flexy.GameFlow Unity Discussions Thread](https://discussions.unity.com/t/flexy/1711626) 
 
 
 ## Structure
@@ -34,8 +34,8 @@ Ask questions on Flexy.GameFlow Unity Discussions Thread
 - Here you will find Stage Prefabs and states prefabs like MainMenu, Settings, ChooseMap, State_Play, State_Pause, etc.
 - Also here Test_Scenes for every state to launch right from it with enabled test cases (available test cases to the right of play button)  
 ![Img](Src/Guide_Library.png)
-- In Code you will fine UIWIndowEx and StateEx derived from State  
-  Those are ViewModels from MC-VMV pattern   	
+- In Code you will find UIWIndowEx and StateEx derived from State  
+  Those are ViewModels from [MC-VMV](../../Flexy.Bricks-ToYs/ArchitecturePrinciples.md) pattern   	
    ```csharp
    public class Window_MainMenu : UIWindowEx
    {
